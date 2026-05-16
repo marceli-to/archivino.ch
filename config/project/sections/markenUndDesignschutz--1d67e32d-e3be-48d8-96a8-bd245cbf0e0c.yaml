@@ -1,0 +1,22 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 6b414e44-b6af-4175-9495-2f0b181bff4b # Marken- und Designschutz
+handle: markenUndDesignschutz
+maxAuthors: 1
+minAuthors: 1
+name: 'Marken- und Designschutz'
+previewTargets:
+  -
+    label: 'Primäre eintrag Seite'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # archivino.ch
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/index.twig
+    uriFormat: markenschutz-designschutz
+type: single

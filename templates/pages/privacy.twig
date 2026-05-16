@@ -1,0 +1,22 @@
+{% extends '/partials/main.twig' %}
+
+{% block content %}
+
+    {# show main title on homepage only #}
+    {% if craft.app.request.url == '/'  %}
+        {% include '/components/main-title.twig' %}
+    {% endif %}
+
+    <section class="text-section container-wrapper text mt-45 bg-white visible" id="datenschutz">
+        <div class="container">
+            <div class="text-block">
+                <div class="text-content ">
+                    <h2 class="h2 title">Datenschutz</h2>
+                    <script src="https://www.privacybee.ch/widget.js"></script>
+                    <privacybee-widget website-id="cllqi3mmu5285620wwznsf257o" lang="de"></privacybee-widget>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

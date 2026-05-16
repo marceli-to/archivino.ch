@@ -1,0 +1,112 @@
+<!--
+BlockImage classes
+-------------------
+dots-right / dots-left
+dots-after (indented-right / indented-left / "" )
+ + dots-after-higher
+ text-above
+
+circle-top / circle-bottom
+
+
+
+circle classes:
+---------------
+circle-black / circle-primary
+circle-bold / circle-regular / circle-light
+circle-small / circle-large
+
+-->
+
+{% macro Image(elementObject) %}
+{% import '/macros/link.twig' as LinkMacro %}
+
+  {% set element = elementObject %}
+
+  {# choose image source field and class source field depending on block type #}
+  {% if element.type.handle == 'headerBild' %}
+    {% set image = element.headerImage.one() %}
+    {% set dotsPositionClass = element.positionPunktMusterHeader %}
+    {% set imageTransform = 'header' %}
+    {% set imageTransformLow = 'headerLow' %}
+    {% set circleShadow = 'shadow' %}
+
+    {# higher header image on home #}
+    {% if craft.app.request.url == '/'  %}
+      {% set imageTransform = 'headerHome' %}
+      {% set imageTransformLow = 'headerHomeLow' %}
+    {% endif %}
+
+  {% else %}
+    {% set image = element.image.one() %}
+    {% set dotsPositionClass = element.positionPunktMuster %}
+    {% set imageTransform = 'fullWidthImage' %}
+    {% set imageTransformLow = 'fullWidthImageLow' %}
+    {% set circleShadow = '' %}
+  {% endif %}
+
+  {# set different classes #}
+  {% set textAboveDotsClass = element.punktMusterTextVorBild ? 'text-above' : '' %}
+
+  <section class="image-macro {{ dotsPositionClass }} {{ textAboveDotsClass }} {{ element.kreisPosition }}">
+
+    {% if element.punktMusterTextVorBild %}
+    <!-- text above -->
+    <div class="dots-above dots"></div>
+    <div class="text-above-content">
+      {{ element.punktMusterTextVorBild|nl2br }}
+    </div>
+    <!-- end text above -->
+    {% endif %}
+
+    {% if image|length and image.kind == 'image' %}
+    <picture class="{{ element.shadow ? 'shadow' : '' }}">
+
+      {% if element.type.handle == 'headerBild' %}
+        <source media="(max-width: 599px)" srcset="{{ image.getUrl('responsiveHeader') }}">
+      {% endif %}
+        <source media="(max-width: 899px)" srcset="{{ image.getUrl('responsiveHeaderTablet') }}">
+
+
+      {% if image|length %}
+        <img
+            src="{{ image.getUrl(imageTransformLow) }}"
+            data-src="{{ image.getUrl(imageTransform) }}"
+            class="lazyload"
+            alt="{{ image.title }}">
+      {% else %}
+        <img src="https://picsum.photos/1040/510" alt="">
+      {% endif %}
+
+    </picture>
+    {% endif %}
+
+    {% if image|length and image.kind == 'video' %}
+      {% if image.videoPoster|length %}
+        {% set videoPoster = 'poster=' ~ image.videoPoster.one().getUrl() %}
+      {% endif %}
+    <div class="video-wrapper">
+      <video class="{{ element.shadow ? 'shadow' : ''}}" autoplay muted loop playsinline {{ videoPoster ?? '' }}>
+        <source src="{{ image.getUrl() }}" type="video/mp4">
+      </video>
+    </div>
+    {% endif %}
+
+    {% if dotsPositionClass != "no-dots" %}
+    <div class="image-macro-dots dots"></div>
+      {% if element.kreisText is not empty %}
+      <h3 class="image-macro-circle">
+        {% if(element.linkField) %}
+
+          {{ LinkMacro.link(element.linkField, element.kreisText|capitalize|nl2br, "circle " ~ element.kreisFarbe  ~ " " ~ element.kreisSchriftstil ~ " " ~ element.kreisGroesse) }}
+
+        {% else %}
+          <span class="circle {{ element.kreisSchriftgroesse }} {{ element.kreisFarbe }} {{ element.kreisSchriftstil }} {{ element.kreisGroesse }} {{ circleShadow }}">
+            {{ element.kreisText|capitalize|nl2br }}
+          </span>
+        {% endif %}
+      </h3>
+      {% endif %}
+    {% endif %}
+  </section>
+{% endmacro %}

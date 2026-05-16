@@ -1,0 +1,30 @@
+<footer class="main-footer">
+  <div class="container footer-container">
+    <div class="footer-address">
+      <strong>{{ globalInformation.company }}</strong><br>
+      {{ globalInformation.address|nl2br }}<br>
+      {{ globalInformation.zip }} {{ globalInformation.city }}
+    </div>
+    <div class="footer-contact">
+      <a href="tel:{{ globalInformation.phone|slice(1)|replace(' ', '') }}" title="{{ globalInformation.phone }} anrufen">T {{ globalInformation.phone }}</a><br>
+      <a href="mailto:{{ globalInformation.eMail }}" title="E-Mail an {{ globalInformation.eMail }} senden">{{ globalInformation.eMail }}</a><br>
+      <a href="https://www.archivino.ch" title="Archivino">www.archivino.ch</a>
+    </div>
+    <div class="footer-social">
+      <ul>
+        {% for social in globalInformation.socials %}
+          <li>
+            <a href="{{ social.link }}" title="{{ social.profil }}" class="social-icon" target="_blank">
+              <i class="fa-brands fa-{{ social.profil }}"></i>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-links">
+      <a href="/impressum">Impressum</a> | <a href="/agb">AGB</a> | <a href="/datenschutz">Datenschutzerklärung</a><br>
+          <a href="/widerrufsbelehrung">Widerrufsbelehrung</a> | <a href="/markenschutz-designschutz">Marken- und Designschutz</a><br>
+      <a href="https://stoz.ch/" target="_blank">design by stoz</a>
+    </div>
+  </div>
+</footer>

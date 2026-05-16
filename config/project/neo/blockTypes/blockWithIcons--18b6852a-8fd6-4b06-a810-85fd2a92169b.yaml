@@ -1,0 +1,64 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  b45c4ef4-5568-4d2c-92d9-ae07e1d973c4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: be045fdf-3956-4b5f-971f-250ad522c821 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59950a0c-ca46-49c3-a0f0-14fdbdb1dda7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f9fd9266-e6f7-4bc5-85f9-c7b299f2f5ee # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65c7d928-e18a-4864-964c-3e7c839236fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 832d4cad-5ca8-41c8-9073-f6daf04fd497 # Farbe
+            instructions: null
+            label: Hintergrundfarbe
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86fd52bb-6818-4f6c-9664-509b48fc4ba3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 83b9f8be-f98d-415c-ad7e-0ee93f1dbcaa
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: blockWithIcons
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Breiter Block mit Icons'
+topLevel: true

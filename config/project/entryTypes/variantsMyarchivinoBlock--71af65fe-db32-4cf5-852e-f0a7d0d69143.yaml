@@ -1,0 +1,52 @@
+color: null
+fieldLayouts:
+  7eb39be1-53b3-454b-a2c3-73b2828feb3e:
+    cardView:
+      - 'layoutElement:bda5ef44-7e7d-4bc4-bd64-a9316b187c1b'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: b84d9e52-a0f8-4a44-912d-edc72d58c19e
+            handle: null
+            instructions: null
+            label: Holzart
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bda5ef44-7e7d-4bc4-bd64-a9316b187c1b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 2d2351ec-d234-4046-8b3c-d5205a1a8284
+            handle: null
+            instructions: null
+            label: Varianten
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b39ce0bb-1acf-4466-944e-e9bc56fb651a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5fb9d14c-7061-4f50-bc64-ed98193c668a
+        userCondition: null
+    thumbFieldKey: 'layoutElement:bda5ef44-7e7d-4bc4-bd64-a9316b187c1b'
+handle: variantsMyarchivinoBlock
+hasTitleField: false
+icon: null
+name: 'Varianten Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,14 @@
+columnSuffix: null
+handle: website
+instructions: 'Im Format http(s)://.....'
+name: 'Externer Autor - Externer Autor - Website'
+searchable: false
+settings:
+  fullGraphqlData: false
+  maxLength: 255
+  showLabelField: false
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

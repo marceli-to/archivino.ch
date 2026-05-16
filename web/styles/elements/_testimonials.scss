@@ -1,0 +1,112 @@
+.testimonials{
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.testimonial-dots{
+  position: absolute;
+  height: 219px;
+  width: 90%;
+  left: -4%;
+  bottom: -3.5rem;
+}
+
+.testimonial-carousel{
+  position: relative;
+  @include shadow;
+}
+.testimonial{
+  position: relative;
+  display: grid;
+
+  padding: 2rem 3rem 4rem 3rem;
+  gap: 1rem;
+
+  @include for-tablet-portrait-up {
+    grid-template-columns: 1fr 2fr;
+
+  }
+  @include for-tablet-landscape-up{
+    padding: 4rem 6rem;
+    gap: 2rem;
+  }
+  background-color: $black;
+  color:  $white;
+  z-index: 1;
+
+  &::before,
+  &::after{
+    position: absolute;
+    color: $primary-color;
+    font-size: 7rem;
+    line-height: 0;
+    font-weight: $font-weight-light;
+    @include for-tablet-landscape-up{
+      font-size: 9rem;
+    }
+  }
+
+  &::before{
+    content: '«';
+    top: 1.5rem;
+    left: 1rem;
+    @include for-tablet-landscape-up {
+      top: 3rem;
+      left: 2rem;
+    }
+  }
+  &::after{
+    content: '»';
+    bottom: 4rem;
+    right: 1.5rem;
+    @include for-tablet-landscape-up {
+      bottom: 4rem;
+      right: 3rem;
+    }
+  }
+
+  .blockquote{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    p{
+      margin: 0;
+    }
+    &-text{
+      font-size: 1rem;
+      line-height: 1.375;
+    }
+    &-footer{
+      margin-top: 1rem;
+      font-size: 1rem;
+      color:  $primary-color;
+    }
+  }
+}
+.owl-stage-outer{
+  background-color: $black;
+}
+
+.testimonial-carousel{
+  .owl-dots{
+    z-index: 1;
+    position: absolute;
+    bottom: 1.2rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  button.owl-dot{
+    height: 0.6rem;
+    width: 0.6rem;
+    background: rgba($white, 0.4);
+    display: block;
+    border-radius: 50%;
+    &.active{
+      background: $primary-color;
+    }
+  }
+}

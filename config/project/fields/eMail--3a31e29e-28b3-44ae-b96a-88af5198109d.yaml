@@ -1,0 +1,11 @@
+columnSuffix: null
+contentColumnType: string
+handle: eMail
+instructions: null
+name: E-Mail
+searchable: false
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

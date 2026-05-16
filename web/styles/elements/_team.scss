@@ -1,0 +1,8 @@
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include for-tablet-portrait-up{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  gap: 2rem;
+}

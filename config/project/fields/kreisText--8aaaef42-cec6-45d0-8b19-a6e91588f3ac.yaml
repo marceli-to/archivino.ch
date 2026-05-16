@@ -1,0 +1,18 @@
+columnSuffix: tsddrgvl
+contentColumnType: text
+handle: kreisText
+instructions: null
+name: Kreis-Text
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 3
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

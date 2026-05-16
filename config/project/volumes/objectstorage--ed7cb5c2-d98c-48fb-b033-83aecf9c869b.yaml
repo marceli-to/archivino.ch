@@ -1,0 +1,68 @@
+fieldLayouts:
+  57e88ecc-4d01-439f-8f19-be0b3885c5bf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: 'Wird bei Bildergalerien (z.B. Projekte) als erste Text-Zeile unter dem Bild verwendet.'
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: f78976fc-ac93-4f5d-b4f7-166d085aedd7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8c1939b7-4091-424c-a65b-fa9ce0327a9d # Zweite Zeile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 915c9758-39da-40ab-90ca-8f217b49f160
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a42ce9e8-2902-488c-8d77-f3253804b533 # Video-Poster
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cac8a06f-3ca8-4d3f-8305-e0a5e31bc607
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: a23f4fef-7d43-4b93-9b32-f2ca2cbad08d
+        userCondition: null
+fs: objectstorage
+handle: objectstorage
+name: Object-Storage
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: null
+transformSubpath: ''

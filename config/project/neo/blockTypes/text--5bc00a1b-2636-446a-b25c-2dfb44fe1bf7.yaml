@@ -1,0 +1,160 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  27753b08-64a3-4496-9104-ee04d2301fb9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: be045fdf-3956-4b5f-971f-250ad522c821 # Titel
+            instructions: 'Wenn der Titel leergelassen wird, wird der Block als reiner Text-Block angezeigt.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d04d6988-d20b-4625-a188-f0e3ee155700
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b54f2bd0-8d40-4afa-a8cb-0e27ee121596 # Redactor Text
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d97f37d5-b90a-407b-8256-caed52290fd0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: a22959e6-66b8-47d2-9ef3-63965401c1ec
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6a81c688-fd7f-478f-9bd4-74d49bbd1d08 # Bild/Video
+            instructions: 'Ohne Bild/Video wird ein normaler Text-Block angezeigt'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6c1f478-ec71-428a-b876-ae6f9a33e20d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: ac3e0883-9ef6-495b-bbe9-3b5aa910c4ee # Ausrichtung
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5aeda238-9c9a-4c71-8c25-650eb12d8129
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 69a87f15-72c2-446c-a730-3eb979ac361e # Link
+            instructions: 'Nur für Bilder verfügbar und nur nötig, falls Bild verlinkt sein soll.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 667ea67a-ff04-4d20-bc8b-9e7464bcc4c4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Bild/Video
+        uid: 9ce3ea65-87dc-4dbe-abb0-87ad1e8d2365
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e8cf9f80-8f2f-4eaf-98c0-826fdea1e1ab # Titel-Grösse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 39c4ce24-a1b9-4c8d-8101-c2fc8a3e9bed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9672c26-91ec-4c54-86b0-a40f8171e134
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 832d4cad-5ca8-41c8-9073-f6daf04fd497 # Farbe
+            instructions: 'Die Hintergrundfarbe dieses Blocks.'
+            label: Hintergrund
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bdfb83b3-984d-47c3-8215-7c089b17e930
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5c29b20-b727-4470-b986-c1e8f0b72894 # Schatten
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2ec9870-7b62-4bab-a34c-18e8078b3e8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ef58b43c-e5e3-40b4-8f2e-fae3fa3a7a3a # Lead-Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8b3a9ca-3340-4898-9d9b-88aa768b27f6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: c7572303-e447-4696-b7e8-a8c5e14e4501
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: text
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Text (+Bild/Video)'
+topLevel: true

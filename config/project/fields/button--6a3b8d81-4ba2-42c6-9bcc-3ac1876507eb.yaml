@@ -1,0 +1,41 @@
+columnSuffix: wbeszxaj
+handle: button
+instructions: null
+name: Button
+searchable: false
+settings:
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: false
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - allowedKinds
+              - '*'
+            -
+              - showUnpermittedVolumes
+              - ''
+            -
+              - showUnpermittedFiles
+              - ''
+  types:
+    - entry
+    - asset
+    - category
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

@@ -1,0 +1,48 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  efacd1d9-ec6e-4ff5-b792-f2f54acf67bc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7be5ec08-180c-44b3-8ce8-2a23a9c378eb # Redactor Text SimplePlus
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 070cd75a-3ca8-4c9c-9c24-15fcab5f0b26
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Die Adresse wird automatisch anhand der Daten aus dem Bereich "Globale Inhalte" angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 0a9639f0-c320-4eda-9df2-c94289374094
+            userCondition: null
+        name: Hinweis
+        uid: 945c6def-fd55-43f7-91d1-33179a6d0d58
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689
+groupChildBlockTypes: true
+handle: contactInformation
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Kontaktblock
+topLevel: true

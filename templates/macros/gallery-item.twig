@@ -1,0 +1,13 @@
+{% macro GalleryItem(galleryItemObject) %}
+<figure class="gallery-item">
+  <picture>
+    <a href="{{ galleryItemObject.getUrl('galleryFull') }}" data-lightbox="gallery-1" data-title="{{ galleryItemObject.title }}">
+      <img src="{{ galleryItemObject.getUrl('gallery') }}" alt="{{ galleryItemObject.title }}">
+    </a>
+  </picture>
+  <figcaption>
+    {{ galleryItemObject.title }}<br>
+    {{ galleryItemObject.secondLine }}
+  </figcaption>
+</figure>
+{% endmacro %}

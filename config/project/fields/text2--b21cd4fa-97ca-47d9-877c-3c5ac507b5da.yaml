@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: text2
+instructions: null
+name: 'Content-Blöcke - Titel-Text-Block - Text'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 5755d590-63f4-4378-a687-bd9a2e3a993d # Default
+  createButtonLabel: null
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: headerHomeLow
+height: 740
+interlace: none
+mode: crop
+name: 'Header Home Low'
+position: center-center
+quality: 30
+upscale: true
+width: 1920

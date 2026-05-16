@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: string
+handle: blockWithIcons
+instructions: null
+name: Inhalt
+searchable: false
+settings:
+  entryTypes:
+    -
+      uid: 0529e0b6-8c40-495a-9e95-357a0a9e5966 # Icon-Text-Bild
+    -
+      uid: e791f966-5bed-4409-92c0-0475077e115d # Icon-Text-Icon-Text
+  maxEntries: 1
+  minEntries: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

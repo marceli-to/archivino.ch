@@ -1,0 +1,37 @@
+{% import '/macros/product-list-item.twig' as Product %}
+
+<section class="products container-wrapper mt-22">
+  <div class="container">
+
+    <h2 class="my-archivino">
+      <span class="my">my</span><span class="archivino">archivino</span>
+    </h2>
+
+    <div class="product-entries">
+
+      <div class="product-mice">
+        <img src="/assets/icons/mice.svg" alt="">
+      </div>
+
+      {% for product in craft.entries.section('produkte').type('myarchivino').all() %}
+        {{ Product.Product(product) }}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- default Products -->
+<section class="products container-wrapper mt-45">
+  <div class="container">
+    <div class="product-entries">
+      {% for product in craft.entries.section('produkte').all() %}
+        {% if product.type != 'myarchivino' %}
+        {{ Product.Product(product) }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+

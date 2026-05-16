@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: responsiveHeader
+height: 500
+interlace: none
+mode: crop
+name: 'Responsive Header'
+position: center-center
+quality: null
+upscale: true
+width: 500

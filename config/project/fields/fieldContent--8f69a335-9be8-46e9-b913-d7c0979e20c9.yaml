@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: fieldContent
+instructions: null
+name: 'Inhalt - Icon-Text-Bild - Icon-Text-Bild'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 995f82a7-44a4-4ca3-8353-289113c4cff4 # Inhalt - Icon-Text-Bild - Icon-Text-Bild Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

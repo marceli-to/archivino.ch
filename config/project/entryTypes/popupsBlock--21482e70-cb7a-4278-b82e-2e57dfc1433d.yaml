@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  f493b3c2-85c7-4a89-bae1-e75ced7b55a9:
+    cardView:
+      - 'layoutElement:723c054c-d155-402c-9775-8c4423386bba'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 428688f8-6c69-46cb-9a16-26de553344b6
+            handle: image
+            instructions: null
+            label: Icon
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3198a620-2fcc-46d0-b878-d0a340084d38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 60f454f4-b60b-425b-8988-7c3f62ab3cea
+            handle: titel
+            instructions: null
+            label: Titel
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 723c054c-d155-402c-9775-8c4423386bba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 8bef9bec-7c49-4f7a-bfbb-f345fa29f0d7
+            handle: null
+            instructions: null
+            label: Popup-Inhalt
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac41b33c-065d-4b5d-9601-e217a69c4a8c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0915844b-a2ca-4274-b518-29ad8867ba7a
+        userCondition: null
+    thumbFieldKey: 'layoutElement:3198a620-2fcc-46d0-b878-d0a340084d38'
+handle: popupsBlock
+hasTitleField: false
+icon: null
+name: 'Kundentypen Popups Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

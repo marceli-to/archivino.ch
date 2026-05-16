@@ -1,0 +1,733 @@
+dateModified: 1778925822
+elementSources:
+  Solspace\Freeform\Elements\Submission:
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - id
+        - status
+        - dateCreated
+        - form
+      type: native
+    -
+      heading: Formulare
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: 'form:3'
+      tableAttributes:
+        - id
+        - status
+        - dateCreated
+        - form
+        - 'field:6'
+        - 'field:2'
+      type: native
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      heading: HAUPTSEITEN
+      type: heading
+    -
+      key: 'single:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+      type: native
+    -
+      key: 'single:7527c347-c4e1-403c-a6e3-a891b7b6d81b' # Werte
+      type: native
+    -
+      key: 'single:a8e7d0eb-7a6a-422c-a8e2-5dd2d4044c06' # Funktion
+      type: native
+    -
+      key: 'single:735e9d44-2030-47f7-9b87-2b50cedbc2e1' # Produkte
+      type: native
+    -
+      key: 'single:871e7bc1-123f-4cd1-acde-d7cfeb6ef501' # Lösungen
+      type: native
+    -
+      key: 'single:252e6657-29ee-429b-a911-58b28d003759'
+      type: native
+    -
+      key: 'single:80664be5-5322-4172-8d0a-648e560ba16e'
+      type: native
+    -
+      key: 'single:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+      type: native
+    -
+      heading: NEBENSEITEN
+      type: heading
+    -
+      key: 'single:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+      type: native
+    -
+      key: 'single:1a7e6945-84e2-4299-b0de-bd25cae6a619' # AGB
+      type: native
+    -
+      key: 'single:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+      type: native
+    -
+      key: 'single:569b6cc5-a027-4bec-8c25-b70fdc86ce81' # Widerrufsbelehrung
+      type: native
+    -
+      key: 'single:1d67e32d-e3be-48d8-96a8-bd245cbf0e0c' # Marken- und Designschutz
+      type: native
+    -
+      heading: MODULE
+      type: heading
+    -
+      key: 'section:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+      type: native
+email:
+  fromEmail: $FROM_EMAIL
+  fromName: $FROM_NAME
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    command: ''
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  objectstorage:
+    hasUrls: true
+    name: Object-Storage
+    settings:
+      addSubfolderToRootUrl: true
+      bucket: $OBJECT_STORAGE_BUCKET
+      endpoint: $OBJECT_STORAGE_SERVER
+      expires: ''
+      keyId: $OBJECT_STORAGE_KEY
+      makeUploadsPublic: true
+      region: $OBJECT_STORAGE_REGION
+      secret: $OBJECT_STORAGE_SECRET
+      subfolder: dev
+    type: fortrabbit\ObjectStorage\Fs
+    url: $CDN_URL
+meta:
+  __names__:
+    00b6694f-ff5d-4043-bc78-49af4feae29c: Bild # Bild
+    0bb99e04-bd9a-4506-8d53-a77f0f7faaf8: 'Externer Autor' # Externer Autor
+    00ddb8d1-abb5-498d-9585-a7e5df817c32: Kreis-Farbe # Kreis-Farbe
+    0e42f6d8-0d9e-4ba4-b9a6-5acd93483921: Lösungen # Lösungen
+    1a7e6945-84e2-4299-b0de-bd25cae6a619: AGB # AGB
+    1a373574-7b06-4f8d-b905-b251221a7338: 'Element Block' # Element Block
+    1b839cde-1323-4c4b-b942-738885b3c8c7: Produkt-Verwaltung # Produkt-Verwaltung
+    1ca4dbd5-0b22-4061-a4ba-ce3deaf879c0: Product-Gallery # Product-Gallery
+    1d67e32d-e3be-48d8-96a8-bd245cbf0e0c: 'Marken- und Designschutz' # Marken- und Designschutz
+    1dd89172-e8de-4619-99fd-4a81bcf19326: Text-Col # Text-Col
+    1df30819-5074-43c0-ad63-c36e470d254b: Meta-Description # Meta-Description
+    2a47a8ab-ce89-4695-91b6-78f0f52c6e8d: Fax # Fax
+    2c76f29b-5579-4d12-8814-4fc1c915eb2c: Kachel-Breite # Kachel-Breite
+    2cd4332c-8dea-4c65-85ce-95f0f2a485a1: 'Full Width Image' # Full Width Image
+    2e0c4766-9025-4f16-9261-f7ae3ff33771: Square # Square
+    2f6857ca-a74c-45b1-98c1-f4a829d0d53f: 'Vorteile Block' # Vorteile Block
+    3a31e29e-28b3-44ae-b96a-88af5198109d: E-Mail # E-Mail
+    3b3df95a-f6c3-46c0-9ef2-4bfef5247831: Standard # Standard
+    3d05bda8-4ebb-41bb-8dc8-0a0216912735: 'Bild & Botschaft' # Bild & Botschaft
+    3d654830-e1a4-479a-aa0d-01d49e4a8189: 'Position Punkt-Muster' # Position Punkt-Muster
+    3db4b163-b7bc-4228-b403-bc325b20c150: 'Inhalt - Icon-Text-Icon-Text - Icon-Text-Icon-Text' # Inhalt - Icon-Text-Icon-Text - Icon-Text-Icon-Text
+    4a380658-f9c6-4e21-a226-e27a997107f0: Nachname # Nachname
+    4c10316a-411c-4ec6-9d55-3c55e31e3837: Header # Header
+    4fef3a87-bb5c-4f93-add0-c81e457a46d1: Element # Element
+    5b6dfe74-4f0c-44fa-b405-871bf4abed9c: Benutzerverwaltung # Benutzerverwaltung
+    6a3b8d81-4ba2-42c6-9bcc-3ac1876507eb: Button # Button
+    6a47eda7-5626-4f86-af6e-c123f3075757: Titelbild # Titelbild
+    6a81c688-fd7f-478f-9bd4-74d49bbd1d08: Bild/Video # Bild/Video
+    6b414e44-b6af-4175-9495-2f0b181bff4b: 'Marken- und Designschutz' # Marken- und Designschutz
+    6ba0a247-69b6-4586-ad86-4a8300bd4933: Zielgruppen # Zielgruppen
+    6d064992-c34b-4ef0-9b87-cb1b661bf7df: Datenschutz # Datenschutz
+    6e4fa1de-3908-4802-b235-44822643e0c2: 'Simple 2' # Simple 2
+    7b1fd445-81ea-436d-8033-89fbc11a6ca2: Teaser # Teaser
+    7b49ab7f-91de-4bbb-ae0f-a0e29f47ffef: Kreis-Grösse # Kreis-Grösse
+    07b387b1-5caf-4e10-9dba-95961ecf1c09: Kachel-Farbe # Kachel-Farbe
+    7be5ec08-180c-44b3-8ce8-2a23a9c378eb: 'Redactor Text SimplePlus' # Redactor Text SimplePlus
+    07d8e39d-c7ad-412f-a60e-886ee471ddfd: Portrait # Portrait
+    8a3c23f8-0bc3-4c8c-bfc5-7c2e2f5f4c19: Allgemein # Allgemein
+    8a4f4bfd-6801-4e54-bde4-69eac186d83d: Lead-Text # Lead-Text
+    8a35cb9b-0a22-4f63-be32-318ab40c3b8c: Breite # Breite
+    8aaaef42-cec6-45d0-8b19-a6e91588f3ac: Kreis-Text # Kreis-Text
+    8aff0e57-44dd-4095-8115-20d244ad1deb: Datenschutz # Datenschutz
+    8c1939b7-4091-424c-a65b-fa9ce0327a9d: 'Zweite Zeile' # Zweite Zeile
+    8e4e3768-a4a9-4988-be55-075e97aed157: Firmenname # Firmenname
+    8f7c0986-6e59-416f-a40c-3cafdb4e5953: archivino.ch # archivino.ch
+    8f69a335-9be8-46e9-b913-d7c0979e20c9: 'Inhalt - Icon-Text-Bild - Icon-Text-Bild' # Inhalt - Icon-Text-Bild - Icon-Text-Bild
+    9a03a6ed-7c25-4c3e-92fe-79bd3fef61e7: Vollbildzeile # Vollbildzeile
+    9a89342f-6409-4c6d-84c2-03209ae775f6: 'Zwei Spalten' # Zwei Spalten
+    9bb50e71-b0e5-4be6-bb32-920f21cdd7b4: Standard # Standard
+    9cdc37f9-2156-4052-8a60-9c9e22097549: Bildergalerie # Bildergalerie
+    9e333bc3-1995-4f95-8604-b0caff73788f: 'Header Low' # Header Low
+    9ec98225-6ad6-47f0-9616-bd2faaa16806: Customized # Customized
+    13dab699-ff85-46be-aeca-ccf3161c7a2e: Einstellungen # Einstellungen
+    13f8b1c6-e4d6-4c46-bea7-8886093a8144: Ort # Ort
+    17b4894f-2811-4992-b36e-a42a919cc0ad: 'Intranet (light)' # Intranet (light)
+    18b8d1b0-c56c-4996-b0dd-b43151b8216a: 'TextCols - Bild-Link' # TextCols - Bild-Link
+    23a4f146-62bc-4be6-8249-25578a0c7f39: 'Text vor Bild' # Text vor Bild
+    28d29cb9-c818-45e0-818d-d902c3b53c9a: Bild # Bild
+    29c1a5d4-669a-413c-9232-e1e4950ab0bc: Keywords # Keywords
+    31e8682b-53d0-4efb-9975-e0387a89c0fd: 'Versandbestätigung Kontaktformular' # Versandbestätigung Kontaktformular
+    45ce050b-b0b9-48ae-8c01-3d4a9f6f233d: Anordnung # Anordnung
+    45ef0af1-1b38-4f7a-b765-fa76c6e1d51b: Header-Bild # Header-Bild
+    63edda70-6100-406c-9052-81d10608dd53: Kreis-Schriftstil # Kreis-Schriftstil
+    65a78583-df23-4439-a9a0-e643f9dc4933: Title-Overline # Title-Overline
+    65dce8d4-9348-489e-9737-5afb38fd13bb: Simple # Simple
+    67a604a1-e210-4e2f-bd9a-0283f73bbd26: Höhe # Höhe
+    69a87f15-72c2-446c-a730-3eb979ac361e: Link # Link
+    70e2424b-72a3-4ab6-9477-07e70d394b61: Gallery # Gallery
+    71af65fe-db32-4cf5-852e-f0a7d0d69143: 'Varianten Block' # Varianten Block
+    71f160f1-36c0-4e93-9d35-f7759a36bfb4: Impressum # Impressum
+    74edf4ad-d08f-4441-b4d2-59ba5cde6ac0: AGB # AGB
+    75cdc66c-6150-4522-9579-ed7636baf630: ProductListItemWider # ProductListItemWider
+    77c4062b-f439-4676-be16-1dfe1cc32b0f: Produkte # Produkte
+    78e4c4a7-8bdb-4ce9-bfdf-a9acd359bab2: Lokalität # Lokalität
+    87daceef-07b4-45bc-9502-7eada98bf283: Content-Blöcke # Content-Blöcke
+    92be1079-173d-44e3-b319-d021cdddfe29: 'Header Tablet' # Header Tablet
+    94a2d662-080c-49a6-94bb-eb353c6f62b2: 'Position Punkt-Muster' # Position Punkt-Muster
+    179df028-0f57-4503-b953-4ef246360565: 'Simple Plus' # Simple Plus
+    208db7d0-b16b-40d6-8df0-ba24df64d9c8: Varianten # Varianten
+    237ead47-fe82-44cf-9690-12b87ff8c4c5: Home # Home
+    275d7d80-4d75-49cf-aa8b-9c1b4be69e81: PLZ # PLZ
+    334dc69c-b2cf-4859-9cbd-ce95e881cb97: Telefon # Telefon
+    451c1d67-6c36-4e78-8ffc-716a3f52755c: 'Full Width Image (Low)' # Full Width Image (Low)
+    479ec2fa-ddb7-4750-b07a-ed794e759d6d: 'Social Profiles' # Social Profiles
+    0529e0b6-8c40-495a-9e95-357a0a9e5966: Icon-Text-Bild # Icon-Text-Bild
+    569b6cc5-a027-4bec-8c25-b70fdc86ce81: Widerrufsbelehrung # Widerrufsbelehrung
+    618feaba-1401-4a5b-9b4f-ab4ea0d88a62: Breite # Breite
+    735e9d44-2030-47f7-9b87-2b50cedbc2e1: Produkte # Produkte
+    791b63e7-53cd-479c-af4b-5b0cfc211d08: 'TextCols Block' # TextCols Block
+    832d4cad-5ca8-41c8-9073-f6daf04fd497: Farbe # Farbe
+    871e7bc1-123f-4cd1-acde-d7cfeb6ef501: Lösungen # Lösungen
+    886f070a-cb44-450c-9a19-eb7233bcf001: Text # Text
+    899fead6-f933-4f6a-8bec-c074fd6f21e1: 'Header Home Low' # Header Home Low
+    995f82a7-44a4-4ca3-8353-289113c4cff4: 'Inhalt - Icon-Text-Bild - Icon-Text-Bild Block' # Inhalt - Icon-Text-Bild - Icon-Text-Bild Block
+    996e756a-a366-4478-8b02-8697fc264bf5: 'Inhalt - Icon-Text-Icon-Text - Icon-Text-Icon-Text Block' # Inhalt - Icon-Text-Icon-Text - Icon-Text-Icon-Text Block
+    01490cc5-08a2-49e9-83be-2bf718bcc8a0: 'Public Schema' # Public Schema
+    1552cba9-27ff-4916-a33d-83229caf41a2: Impressum # Impressum
+    1970d302-b9d6-4684-9869-b1aefe8cd32d: Poweruser # Poweruser
+    4090e13d-c516-4b8e-9f02-8e1869a4bd0b: 'Header Home' # Header Home
+    5416f4aa-5c8c-4730-a6d2-1dc6f15b764f: Funktion # Funktion
+    5755d590-63f4-4378-a687-bd9a2e3a993d: Default # Default
+    6926d0c7-5da6-4bfc-bf34-81e70630d72c: 'Kundentypen Popups' # Kundentypen Popups
+    7527c347-c4e1-403c-a6e3-a891b7b6d81b: Werte # Werte
+    8440a7d9-b3f5-49bb-9c54-24558d83cbdf: Newsletter # Newsletter
+    9127c6f9-9525-4abe-be1a-5f522df3c861: Webseite # Webseite
+    21482e70-cb7a-4278-b82e-2e57dfc1433d: 'Kundentypen Popups Block' # Kundentypen Popups Block
+    066820c4-c9b5-4088-b69f-e0e262e3ee63: 'Content-Blöcke - Content-Box - Button (optional)' # Content-Blöcke - Content-Box - Button (optional)
+    77591cba-5c78-42a2-9a4d-da78ed8c11af: Titel-Text-Block # Titel-Text-Block
+    147904fd-6a31-4173-befe-d73463253ed6: 'Quelle / Autor' # Quelle / Autor
+    151725d3-921b-4b94-8efb-a79b9f023488: 'Content-Blöcke - Spezielles - Spezielle Blöcke Block' # Content-Blöcke - Spezielles - Spezielle Blöcke Block
+    170566ed-a410-46c8-8639-99cf0f8eb7bc: 'Content-Blöcke - Ablauf - Schritt Block' # Content-Blöcke - Ablauf - Schritt Block
+    232479d4-45cd-47ca-81b8-6130314e40a8: 'Responsive Header' # Responsive Header
+    537269e2-b433-48f7-81d8-a9a7cf210bfb: Widerrufsbelehrung # Widerrufsbelehrung
+    594089c1-0c86-46d8-b1ba-84188f0d005e: Icon # Icon
+    604630ba-450f-4a73-9cc0-9c4b0b273686: 'Quelle / Author' # Quelle / Author
+    846778d4-321b-487d-8fe4-01f3ee7de40c: 'In Text' # In Text
+    2427196e-3640-41b8-88fa-f50ba5047337: 'Externer Autor' # Externer Autor
+    8025309e-1527-4fcf-a58a-bdb051215069: 'Abstand nach oben' # Abstand nach oben
+    8689207e-cb7d-4f48-bce2-3efbab308dc1: Team-Verwaltung # Team-Verwaltung
+    12023467-3ec3-4db1-ae0e-f5de70de3aaa: Bemerkungen # Bemerkungen
+    67416391-cf4f-4242-8660-4906cd567a89: Zitat # Zitat
+    67954317-4873-4ce8-9b55-be19175e1237: 'Content-Blöcke - Spezielles - Spezielle Blöcke' # Content-Blöcke - Spezielles - Spezielle Blöcke
+    a6d9019d-9cbe-4586-ae9d-a72521ba354e: Thema # Thema
+    a8e7d0eb-7a6a-422c-a8e2-5dd2d4044c06: Funktion # Funktion
+    a42ce9e8-2902-488c-8d77-f3253804b533: Video-Poster # Video-Poster
+    aa5f8c07-2878-4640-b184-d1f8261ffc20: 'Image Only' # Image Only
+    ab863891-928b-4eea-a1a2-dcdc008bdfab: Holzarten # Holzarten
+    ac3e0883-9ef6-495b-bbe9-3b5aa910c4ee: Ausrichtung # Ausrichtung
+    b00ea68c-8eba-40e6-b2b6-87ee41b8473e: Editor # Editor
+    b1bb8184-47ba-4c52-b369-5d18429a29d0: Volumen # Volumen
+    b6e606cd-69bf-4d65-9de6-3ad97802ef3a: Produkt-Bilder # Produkt-Bilder
+    b9cc2788-986a-434c-86f9-428f545e165d: Kontakt # Kontakt
+    b9e91a70-6b6d-425d-a869-238d3c1d0608: 'Suchmaschinen-Indexierung deaktivieren' # Suchmaschinen-Indexierung deaktivieren
+    b54f2bd0-8d40-4afa-a8cb-0e27ee121596: 'Redactor Text' # Redactor Text
+    b295ea57-abae-4faa-be54-1c7e86956ceb: Inhalt # Inhalt
+    b438a2f2-5aea-4042-98a5-09661bb1b62e: 'Content-Blöcke - Ablauf - Schritt' # Content-Blöcke - Ablauf - Schritt
+    b8782bfd-182e-4682-a2ac-dbbfaea15068: 'Varianten Block 2' # Varianten Block 2
+    bacf7b8f-b892-43dd-aa87-21ad4a99347f: Funktion # Funktion
+    bbca3bfe-956d-4a71-a5ff-3d41530896fb: Button # Button
+    bc8652d4-4887-451c-a679-9375c96aea28: Varianten # Varianten
+    be045fdf-3956-4b5f-971f-250ad522c821: Titel # Titel
+    be9c0fc0-5723-4f6d-a5a6-4b128257b9c8: 'Benutzerverwaltung (light)' # Benutzerverwaltung (light)
+    be15fb58-c7e4-4a3f-8fff-4f35adb2e37b: Bild # Bild
+    bfd8adb6-3938-41d1-b348-a3aeaef22ddc: TextCols # TextCols
+    c2fea3e2-e333-45f1-878a-11fafbc01433: Breite # Breite
+    c9d33126-d6ff-48b9-b0a8-e60f1f72c9a3: Standard # Standard
+    c86ab6a8-e061-4236-b1dd-4521f03f879c: Spezielles # Spezielles
+    c861169f-47c2-4103-9854-8a04c166423e: myarchivino # myarchivino
+    cb6afbbe-9f09-4aca-afaa-9faf441a8db4: Kundenstimmen-Verwaltung # Kundenstimmen-Verwaltung
+    cc450e89-3ada-4944-9492-33dafe7795d5: ProductListItem # ProductListItem
+    ce30cbb9-70d2-43a6-8acc-1f9d1a4187ba: SEO # SEO
+    cf28ecee-94db-46b2-ab54-4deaff3b7eaf: Kreis-Position # Kreis-Position
+    cf86536c-27a9-43f6-b3ad-5ae82fda39eb: Art # Art
+    d02ff229-035c-48bb-aa78-79c2723d637d: Vorname # Vorname
+    d9e6bfc0-4d95-4b96-8e79-b3e8e480d33b: Footer # Footer
+    d68fa7b1-f9da-4f43-b474-be220edc9de3: Home # Home
+    d96189f8-5ee1-420a-855b-aa2b2eef7409: Navigation # Navigation
+    d264285e-fbff-447b-8a82-d6ff1f72bc49: Kontakt # Kontakt
+    de7b07a7-55ae-44d4-acc8-57d67ae65098: 'Content-Blöcke - Vollbildzeile - Vollbildzeile' # Content-Blöcke - Vollbildzeile - Vollbildzeile
+    dfdd2912-b5c1-4601-82a2-43be4bd1f902: Adresse # Adresse
+    e5c29b20-b727-4470-b986-c1e8f0b72894: Schatten # Schatten
+    e8cf9f80-8f2f-4eaf-98c0-826fdea1e1ab: Titel-Grösse # Titel-Grösse
+    e54f0aa5-96bc-4a92-9f51-835f0654163c: Werte # Werte
+    e431dcc3-ae1d-4d62-91db-1ca7012f4384: Testimonials # Testimonials
+    e585eef4-d478-42f2-bd19-c3904d1d0575: Intranet # Intranet
+    e598aaf7-8c51-4aef-b772-b1164a849886: Grössen-Label # Grössen-Label
+    e791f966-5bed-4409-92c0-0475077e115d: Icon-Text-Icon-Text # Icon-Text-Icon-Text
+    e6263340-32e4-4117-904f-d6836f35a7bd: Downloads # Downloads
+    ea874098-180a-40c3-aa02-40ebc5434bb0: Vorteile # Vorteile
+    eaa9cfbc-9d14-443e-be15-43d831d281b0: 'Content-Blöcke - Vollbildzeile - Vollbildzeile Block' # Content-Blöcke - Vollbildzeile - Vollbildzeile Block
+    ebf27a4a-91d3-434e-93da-0f85d078b534: Content-Box # Content-Box
+    ec1019f8-d638-4398-b507-9754f69c79b3: Kreis-Schriftgrösse # Kreis-Schriftgrösse
+    ec38179e-e5dc-4e93-9e05-87295b8d8697: Mitglied # Mitglied
+    ed7cb5c2-d98c-48fb-b033-83aecf9c869b: Object-Storage # Object-Storage
+    ef58b43c-e5e3-40b4-8f2e-fae3fa3a7a3a: Lead-Text # Lead-Text
+    f3c02f46-7585-4f62-85fc-0c26355e8b23: Text # Text
+    f6f71e73-569d-476d-bb27-5dc70ae99fea: Ablauf # Ablauf
+    f9fd9266-e6f7-4bc5-85f9-c7b299f2f5ee: Inhalt # Inhalt
+    f1044ba9-7c68-4ddd-8936-6ddab4e3b244: 'Gallery Full' # Gallery Full
+    fc8e5284-776a-41df-bf12-459409a60e33: FullWidth # FullWidth
+    fcbbcf9e-42d1-49b9-bc7a-18cbdf656153: Bestellbar # Bestellbar
+    ffdc79ed-f1d9-41e3-a305-6e0a0a368e63: Header-Bild # Header-Bild
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  craftagram:
+    edition: standard
+    enabled: true
+    licenseKey: SLZU5149I446H1OSUSKKCMTZ
+    schemaVersion: 3.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      expandSingles: '1'
+      redirectToEntry: '1'
+  fortrabbit-object-storage:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
+  freeform:
+    edition: express
+    enabled: true
+    schemaVersion: 5.14.1
+    settings:
+      alertNotificationRecipients: null
+      allowDashesInFieldHandles: false
+      allowFileTemplateEdit: '1'
+      autoScroll: true
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
+      clientDigestFrequency: 1
+      clientDigestRecipients: null
+      defaultFromEmail: "{{ craft.app.projectConfig.get('email.fromEmail') }}"
+      defaultFromName: "{{ craft.app.projectConfig.get('email.fromName') }}"
+      defaultView: forms
+      defaults:
+        __assoc__:
+          -
+            - previewHtml
+            - true
+          -
+            - twigInHtml
+            - true
+          -
+            - twigIsolation
+            - true
+          -
+            - includeSampleTemplates
+            - true
+          -
+            - notifications
+            -
+              __assoc__:
+                -
+                  - admin
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - conditional
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - userSelect
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - emailField
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+          -
+            - settings
+            -
+              __assoc__:
+                -
+                  - general
+                  -
+                    __assoc__:
+                      -
+                        - formType
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - submissionTitle
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - '{{ dateCreated|date("Y-m-d H:i:s") }}'
+                      -
+                        - formattingTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - basic-light/index.twig
+                -
+                  - dataStorage
+                  -
+                    __assoc__:
+                      -
+                        - storeData
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - defaultStatus
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 2
+                      -
+                        - collectIp
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                -
+                  - processing
+                  -
+                    __assoc__:
+                      -
+                        - ajax
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showIndicator
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - processingText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - Processing...
+                -
+                  - successAndErrors
+                  -
+                    __assoc__:
+                      -
+                        - successBehavior
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - reload
+                      -
+                        - returnUrl
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Form has been submitted successfully!'
+                      -
+                        - errorMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Sorry, there was an error submitting the form. Please try again.'
+                -
+                  - limits
+                  -
+                    __assoc__:
+                      -
+                        - duplicateCheck
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - no_limit
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: null
+      displayFeed: ''
+      emailTemplateDefault: database
+      emailTemplateDirectory: _freeform/notifications
+      emailTemplateMethod: global
+      emailTemplateStorageType: files
+      exportHandlesAsNames: false
+      exportLabels: false
+      fillWithGet: false
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: _freeform
+      formattingTemplate: basic-light/index.twig
+      loggingLevel: error
+      minimumSubmitTime: null
+      pluginName: null
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      purgeAssets: true
+      queuePriority: null
+      rememberPageSubmitOrder: true
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: footer
+      scriptInsertType: files
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      sitesEnabled: false
+      spamFolderEnabled: true
+      spamProtectionBehavior: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      successTemplateDirectory: _freeform
+      updateSearchIndexes: true
+      useQueueForEmailNotifications: false
+      useQueueForIntegrations: false
+  incognito-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+  knock-knock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+    settings:
+      allowIps: ''
+      checkInvalidLogins: ''
+      denyIps: ''
+      enabled: ''
+      forcedRedirect: null
+      invalidLoginWindowDuration: '3600'
+      loginPath: ''
+      maxInvalidLogins: '10'
+      password: ''
+      protectedUrls: ''
+      siteSettings:
+        __assoc__:
+          -
+            - default
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - ''
+                -
+                  - password
+                  - ''
+                -
+                  - template
+                  - ''
+      template: ''
+      unprotectedUrls: ''
+      useRemoteIp: ''
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: QF1K5Q015T9JX4JMLMH7XNHW
+    schemaVersion: 2.1.2
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: 4WNM5F5PPGVW2JM0V1S49IAS
+    schemaVersion: 5.1.0.1
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+system:
+  edition: pro
+  live: true
+  name: archivino.ch
+  retryDuration: null
+  schemaVersion: 5.10.0.0
+  timeZone: Europe/Zurich

@@ -1,0 +1,38 @@
+columnSuffix: hadphkdc
+handle: linkField
+instructions: null
+name: Link
+searchable: false
+settings:
+  advancedFields:
+    - target
+    - rel
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: true
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - '1'
+  types:
+    - entry
+    - category
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

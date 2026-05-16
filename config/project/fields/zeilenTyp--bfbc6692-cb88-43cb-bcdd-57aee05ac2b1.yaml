@@ -1,0 +1,30 @@
+columnSuffix: null
+handle: zeilenTyp
+instructions: null
+name: 'Content-Blöcke - Vollbildzeile - Vollbildzeile - Zeilen-Typ mit...'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 3d05bda8-4ebb-41bb-8dc8-0a0216912735 # Bild & Botschaft
+    -
+      __assoc__:
+        -
+          - uid
+          - 9a89342f-6409-4c6d-84c2-03209ae775f6 # Zwei Spalten
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

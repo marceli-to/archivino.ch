@@ -1,0 +1,118 @@
+fieldLayouts:
+  9bce5b4d-26e3-4a1a-81bf-7b2dc97c8365:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a1b16d0c-7325-4ac9-8d1e-e5319c43f58d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45ef0af1-1b38-4f7a-b765-fa76c6e1d51b # Header-Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eeb448aa-5a4b-48fe-a303-63ddf5d3aa35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Inhalt
+            type: craft\fieldlayoutelements\Heading
+            uid: 5f580d7d-a955-47bd-96b9-1bf0d02dcf27
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e74b663-a5c0-4135-9aa0-043821cb457a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 0bd8e2c4-3e85-4c9f-9eb5-ec78bcf9e9e6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1df30819-5074-43c0-ad63-c36e470d254b # Meta-Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 453c407c-de70-47ce-ba6e-e5b29690e562
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29c1a5d4-669a-413c-9232-e1e4950ab0bc # Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 403923be-ff0e-4755-8375-8de6bc6d7a49
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9e91a70-6b6d-425d-a869-238d3c1d0608 # Suchmaschinen-Indexierung deaktivieren
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e323be1-ad7f-40b2-bdee-0a21b5a884da
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 616930e3-9d8a-43dd-a3bf-23a7ca7a9829
+        userCondition: null
+handle: markenUndDesignschutz
+hasTitleField: false
+name: 'Marken- und Designschutz'
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

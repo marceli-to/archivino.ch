@@ -1,0 +1,32 @@
+columnSuffix: null
+contentColumnType: string
+handle: contentblocks
+instructions: null
+name: Content-Blöcke
+searchable: false
+settings:
+  entryTypes:
+    -
+      uid: 77591cba-5c78-42a2-9a4d-da78ed8c11af # Titel-Text-Block
+    -
+      uid: 67416391-cf4f-4242-8660-4906cd567a89 # Zitat
+    -
+      uid: bbca3bfe-956d-4a71-a5ff-3d41530896fb # Button
+    -
+      uid: 9a03a6ed-7c25-4c3e-92fe-79bd3fef61e7 # Vollbildzeile
+    -
+      uid: f6f71e73-569d-476d-bb27-5dc70ae99fea # Ablauf
+    -
+      uid: ebf27a4a-91d3-434e-93da-0f85d078b534 # Content-Box
+    -
+      uid: 00b6694f-ff5d-4043-bc78-49af4feae29c # Bild
+    -
+      uid: c86ab6a8-e061-4236-b1dd-4521f03f879c # Spezielles
+  maxEntries: null
+  minEntries: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

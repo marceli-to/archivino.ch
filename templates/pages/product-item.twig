@@ -1,0 +1,24 @@
+{% if craft.app.request.getQueryParam('sc') == '1' and 'Snipcart' in craft.app.request.getUserAgent() %}
+    {% set extendTo = '/partials/main-json.twig' %}
+{% else %}
+    {% set extendTo = '/partials/main.twig' %}
+{% endif %}
+
+{% extends extendTo %}
+
+    {% block content %}
+
+        {% if craft.app.request.getQueryParam('sc') == '1' and 'Snipcart' in craft.app.request.getUserAgent() %}
+
+            {% include '/pages/product-item-json.twig' %}
+
+        {% else %}
+
+            {# not yet integrated in neo-field #}
+            {% include '/components/product-item.twig' %}
+
+            {% include '/components/neo-content.twig' %}
+
+        {% endif %}
+
+    {% endblock %}

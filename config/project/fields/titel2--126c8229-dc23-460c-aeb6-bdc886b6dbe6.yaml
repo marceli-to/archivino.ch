@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: titel2
+instructions: 'Wenn der Titel leergelassen wird, wird der Block als reiner Text-Block angezeigt.'
+name: 'Content-Blöcke - Titel-Text-Block - Titel'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

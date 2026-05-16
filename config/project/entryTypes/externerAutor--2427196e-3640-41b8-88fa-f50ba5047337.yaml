@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  40da2d43-5f5d-4136-912d-977199a38b89:
+    cardView:
+      - 'layoutElement:ae3d40d7-3509-459c-b60a-9df55f2924bc'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: caa10602-6f6f-4e6b-be96-1b74923ffc6a
+            handle: null
+            instructions: null
+            label: Name
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae3d40d7-3509-459c-b60a-9df55f2924bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: da488c85-8f0b-4cf7-aa6e-69539bb43673
+            handle: null
+            instructions: null
+            label: Website
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 05c2403a-3b28-44da-a785-c196f7ea9ce6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 75fdf69a-4a7d-441d-a66d-d72fc9471b1a
+            handle: null
+            instructions: null
+            label: 'Social Profiles'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea711764-abc1-4d6e-8565-d7ba9db1ab38
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 752464e2-c574-4d37-8252-000c914d5132
+        userCondition: null
+handle: externerAutor
+hasTitleField: false
+icon: null
+name: 'Externer Autor'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

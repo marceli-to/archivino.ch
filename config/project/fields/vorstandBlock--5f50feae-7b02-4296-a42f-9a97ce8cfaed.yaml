@@ -1,0 +1,19 @@
+columnSuffix: null
+handle: vorstandBlock
+instructions: null
+name: 'Content-Blöcke - Spezielles - Spezielle Blöcke - Vorstand-Block'
+searchable: false
+settings:
+  errorMessage: 'Unable to find component class ''carlcs\uielementfields\fields\UiTip''.'
+  expectedType: carlcs\uielementfields\fields\UiTip
+  settings:
+    __assoc__:
+      -
+        - style
+        - tip
+      -
+        - tip
+        - 'An dieser Stelle wird der Vorstand eingeblendet'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MissingField

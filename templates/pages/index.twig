@@ -1,0 +1,14 @@
+{% extends '/partials/main.twig' %}
+
+{% block content %}
+
+    {# show main title on homepage only #}
+    {% if craft.app.request.url == '/'  %}
+        {% include '/components/main-title.twig' %}
+    {% endif %}
+
+    {% include '/components/neo-content.twig' %}
+
+    {# not yet integrated in neo-field #}
+
+{% endblock %}

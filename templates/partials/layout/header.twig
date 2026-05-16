@@ -1,0 +1,79 @@
+{% set nodes = craft.navigation.nodes('navigation').level(1).all() %}
+<div class="main-header">
+  <div class="container">
+    <header class="header">
+      <div class="nav-toggle">
+        <span class="toggle-icon"></span>
+      </div>
+      <nav class="main-nav">
+        <ul class="navbar-nav">
+
+          {% for node in nodes %}
+            <li class="nav-item">
+              <a class="nav-link {% if node.hasActiveChild or node.active %}active{% endif %}" href="{{ node.url }}"
+                 title="{{ node.title }}">
+                {{ node.title }}
+              </a>
+              {% if node.hasDescendants %}
+                <span class="toggle-lvl2">
+                <span class="chevron-icon"></span>
+              </span>
+                <ul class="dropdown-menu">
+                  {% for subnode in node.children.limit(0).all() %}
+                    <li class="dropdown-item">
+                      {% if subnode.nodeType == 'custom' %}
+                        {% set firstLevel = node.url %}
+                      {% endif %}
+                      <a class="dropdown-link {% if subnode.active %}active{% endif %}" data-content="{{ subnode.title }}"
+                         href="{{ firstLevel ?? '' }}{{ subnode.url }}"
+                         title="{{ subnode.title }}">{{ subnode.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-cart snipcart-checkout">
+              <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.59 17.06">
+                <defs>
+                  <style>
+                      .cart-icon {
+                          fill: none;
+                          stroke-linecap: round;
+                          stroke-miterlimit: 10;
+                          stroke-width: 1.1px;
+                      }
+                  </style>
+                </defs>
+                <path
+                    class="cart-icon"
+                    d="M14.53,15.36c0,.64-.51,1.15-1.15,1.15s-1.15-.51-1.15-1.15,.51-1.15,1.15-1.15,1.15,.51,1.15,1.15Zm-7.76,0c0,.64-.51,1.15-1.15,1.15s-1.15-.51-1.15-1.15,.51-1.15,1.15-1.15,1.15,.51,1.15,1.15ZM15.07,2.28l-.86,6.95m-3.06-6.95l-.04,7.23M7.33,2.28l.89,7.36m-3.95-3.34l13.77-.73M3.34,2.28h15.54l-1.7,6.68-11.93,1.09M.55,.55H2.76l2.49,9.49-.58,2.51h11.42"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-logo">
+        <a href="/" title="Archivino">
+          <img src="/assets/archivino_logo.svg" alt="Archivino">
+        </a>
+      </div>
+    </header>
+  </div>
+</div>
+
+
+<script>
+    $(function () {
+        $('.nav-toggle').click(function () {
+            $('.main-nav').stop(true, true, true).slideToggle(250);
+        });
+
+        $('.toggle-lvl2').click(function () {
+            $(this).toggleClass('active');
+            $(this).next('.dropdown-menu').stop(true, true, true).slideToggle(250);
+        })
+    });
+</script>

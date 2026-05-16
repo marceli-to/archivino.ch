@@ -1,0 +1,13 @@
+columnSuffix: hayfxzuh
+contentColumnType: boolean
+handle: shadow
+instructions: 'Aktivieren, falls das Element einen Schatten haben soll.'
+name: Schatten
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,196 @@
+fieldLayouts:
+  82f55845-1929-43a8-bfc6-2b54125adbfc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 619f3fad-e112-42c5-8286-ac8e9485010e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b6e606cd-69bf-4d65-9de6-3ad97802ef3a # Produkt-Bilder
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77a9219d-0243-4105-bf68-21cf65e4312d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7be5ec08-180c-44b3-8ce8-2a23a9c378eb # Redactor Text SimplePlus
+            instructions: null
+            label: Beschreibung
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14001fd4-f0b1-4011-8322-8ad7814508db
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c2fea3e2-e333-45f1-878a-11fafbc01433 # Breite
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: afe20c36-7c29-4cb2-b0be-aac76e0dade0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 67a604a1-e210-4e2f-bd9a-0283f73bbd26 # Höhe
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7bbb7c6-d03a-4d34-8bea-bd311f1d6586
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b1bb8184-47ba-4c52-b369-5d18429a29d0 # Volumen
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e090f81-3de0-400d-93b4-c55745406633
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bc8652d4-4887-451c-a679-9375c96aea28 # Varianten
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 397b43d3-f4c8-47f6-b08f-7559f9ed36fc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fcbbcf9e-42d1-49b9-bc7a-18cbdf656153 # Bestellbar
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 158a6e0a-3186-4ecd-b810-4d78f1a20d9f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Inhalt
+            type: craft\fieldlayoutelements\Heading
+            uid: 828738d8-b280-4f96-a4d4-d096317c1c7c
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a53e0f7f-1ae5-4a50-8202-5ed868b7d26a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: a177052a-216b-4da7-bbe4-3cb3818bd55d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2c76f29b-5579-4d12-8814-4fc1c915eb2c # Kachel-Breite
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca89315e-660a-43ba-890c-22ef2616475a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: 5d48213d-a4f2-4996-b1da-2b7c2d8bc37e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1df30819-5074-43c0-ad63-c36e470d254b # Meta-Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74369507-aa4c-4fcf-aebe-903cc33019a4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29c1a5d4-669a-413c-9232-e1e4950ab0bc # Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d413cf0-4218-4107-9311-7b4e0d627494
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 943aebf8-ff17-4a13-b770-77dd58cd47dd
+        userCondition: null
+handle: produkte_default
+hasTitleField: true
+name: Standard
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

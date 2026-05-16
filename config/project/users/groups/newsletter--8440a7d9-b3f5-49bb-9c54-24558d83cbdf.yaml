@@ -1,0 +1,5 @@
+description: null
+handle: newsletter
+name: Newsletter
+permissions:
+  - accesscp

@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: variantsDefault
+instructions: null
+name: Varianten
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - b8782bfd-182e-4682-a2ac-dbbfaea15068 # Varianten Block 2
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

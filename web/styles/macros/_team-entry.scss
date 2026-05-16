@@ -1,0 +1,80 @@
+.team-entry-image{
+  position: relative;
+  cursor: pointer;
+
+  img{
+    border-radius: 50%;
+  }
+
+  &:hover{
+    .team-entry-overlay{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.team-entry-name,
+.team-entry-overlay{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: $font-weight-light;
+}
+
+.team-entry-overlay{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+  border-radius: 50%;
+  color: $white;
+  text-align: center;
+  @include animate(all);
+
+  @include for-tablet-portrait-up{
+    font-size: 1.2rem;
+  }
+}
+
+.team-entry-name{
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.team-image{
+  margin-top: 0.7rem;
+  position: relative;
+  grid-area: 1 / 1;
+  width: 70%;
+  @include for-tablet-portrait-up{
+    width: 100%;
+  }
+}
+
+.team-image,
+.team-description{
+  align-self: start;
+}
+
+.team-popup-circle{
+  position: absolute;
+  bottom: 0;
+  right: -50%;
+
+  align-self: center;
+  text-align: center;
+  @include for-tablet-portrait-up {
+    align-self: end;
+    right: unset;
+    transform: translate3d(-25%, 40%, 0);
+  }
+}

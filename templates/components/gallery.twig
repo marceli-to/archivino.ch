@@ -1,0 +1,9 @@
+{% import '/macros/gallery-item.twig' as GalleryItem %}
+
+<section class="gallery container-wrapper mt-45">
+  <div class="container gallery-container">
+    {% for image in block.gallery.all() %}
+      {{ GalleryItem.GalleryItem(image) }}
+    {% endfor %}
+  </div>
+</section>

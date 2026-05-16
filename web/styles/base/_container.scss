@@ -1,0 +1,13 @@
+.container-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 1117px;
+  padding: 0 2.5rem;
+  position: relative;
+}

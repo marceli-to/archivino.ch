@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: c861169f-47c2-4103-9854-8a04c166423e # myarchivino
+  -
+    handle: default
+    uid: 9bb50e71-b0e5-4be6-bb32-920f21cdd7b4 # Standard
+  -
+    uid: 9ec98225-6ad6-47f0-9616-bd2faaa16806 # Customized
+handle: produkte
+maxAuthors: 1
+minAuthors: 1
+name: Produkt-Verwaltung
+previewTargets:
+  -
+    label: 'Primäre eintrag Seite'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # archivino.ch
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/product-item.twig
+    uriFormat: 'produkte/{slug}'
+structure:
+  maxLevels: 1
+  uid: 424f0ecc-cf05-46a4-8891-510207a27be2
+type: structure

@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: schritt
+instructions: null
+name: 'Content-Blöcke - Ablauf - Schritt'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 170566ed-a410-46c8-8639-99cf0f8eb7bc # Content-Blöcke - Ablauf - Schritt Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,47 @@
+defaultPlacement: end
+fieldLayouts:
+  affeda07-bb70-4f62-b947-e83d3f6043a9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: Holzart
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: afb1ea9d-9a72-41a7-9757-0ad7cd37dcca
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: dbe799ed-d1bd-42c4-9eb1-07cb8fb0e3fa
+        userCondition: null
+handle: holzarten
+name: Holzarten
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # archivino.ch
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: a7651aec-8c77-46fd-af0d-65dd5f004f75

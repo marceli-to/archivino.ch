@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  68a4578a-9f23-4fc5-91e3-ab5d06a5f484:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6926d0c7-5da6-4bfc-bf34-81e70630d72c # Kundentypen Popups
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66fa2680-f6fa-4b89-8395-f0e20af19451
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 51acc87b-db2a-42e7-b3a1-0d0c626ba1ff
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689
+groupChildBlockTypes: true
+handle: iconLinksForCustomerTypes
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Icon-Links für Kunden-Typen'
+topLevel: true

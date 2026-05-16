@@ -1,0 +1,35 @@
+color: null
+fieldLayouts:
+  a9a07917-c31d-48a1-a164-cf0ba946558a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: b438a2f2-5aea-4042-98a5-09661bb1b62e # Content-Blöcke - Ablauf - Schritt
+            handle: null
+            instructions: null
+            label: Schritt
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5da1c47-e69e-4f33-b675-968c3d770d0c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d47770b9-eb9b-41b6-bd1a-bf362ae10048
+        userCondition: null
+handle: ablauf
+hasTitleField: false
+icon: null
+name: Ablauf
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

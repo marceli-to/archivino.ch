@@ -1,0 +1,35 @@
+color: null
+fieldLayouts:
+  bf85f6ba-108a-4929-bbb7-c8b17a4816e9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 5f50feae-7b02-4296-a42f-9a97ce8cfaed
+            handle: null
+            instructions: null
+            label: Vorstand-Block
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6357ae9d-7f87-4138-b11c-b127f982e870
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7a1cbb29-704d-466c-9b51-da2f5abec05b
+        userCondition: null
+handle: spezielleBloeckeBlock
+hasTitleField: false
+icon: null
+name: 'Content-Blöcke - Spezielles - Spezielle Blöcke Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,161 @@
+.snipcart{
+  z-index: 99;
+}
+:root{
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   * DEFAULT
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  /* Default */
+  --color-default: #{$black};
+  //--borderColor-default
+  //--bgColor-default
+
+    /* Alt */
+  --color-alt: #{$primary-color};
+  //--bgColor-alt
+
+    /* Icon */
+  --color-icon: #{$primary-color};
+
+    /* Success */
+  //--color-success
+  //--bgColor-success
+
+    /* Error */
+  //--color-error
+  //--borderColor-error
+  //--bgColor-error
+
+    /* Info */
+  //--bgColor-info
+
+    /* Modal */
+ // --bgColor-modal
+ // --bgColor-modalVeil
+
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   * BADGES
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  /* Default (completed) */
+  --color-badge: var(--color-alt);
+
+    /* Active */
+  --color-badge-active: var(--color-alt);
+  --bgColor-badge-active: #f2d0d2;
+
+
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   * BUTTON
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  /* Default */
+  --color-buttonPrimary: #{$white};
+  --borderColor-buttonPrimary: transparent;
+  --bgColor-buttonPrimary: var(--color-alt);
+
+  --color-buttonSecondary: var(--color-alt);
+  --borderColor-buttonSecondary: var(--borderColor-buttonPrimary);
+  --bgColor-buttonSecondary: #f2d0d2;
+
+  /* Hover */
+  --color-buttonPrimary-hover: #{$white};
+  --borderColor-buttonPrimary-hover: transparent;
+  --bgColor-buttonPrimary-hover: var(--color-alt);
+  --shadow-buttonPrimary-hover: 21px 21px 30px #{rgba($black, 0.26)};
+
+  --color-buttonSecondary-hover: var(--color-alt);
+  --borderColor-buttonSecondary-hover: var(--borderColor-buttonPrimary-hover);
+  --bgColor-buttonSecondary-hover: #f2d0d2;
+  --shadow-buttonSecondary-hover: var(--shadow-buttonPrimary-hover);
+
+  /* Active */
+  --color-buttonPrimary-active: #{$white};
+  --borderColor-buttonPrimary-active: transparent;
+  --bgColor-buttonPrimary-active: #{rgba($primary-color, 0.7)};
+  --shadow-buttonPrimary-active: 21px 21px 30px #{rgba($black, 0.26)};
+
+  --color-buttonSecondary-active: var(--color-buttonPrimary-active);
+  --borderColor-buttonSecondary-active: var(--borderColor-buttonPrimary-active);
+  --bgColor-buttonSecondary-active: var(--bgColor-buttonPrimary-active);
+  --shadow-buttonSecondary-active: var(--shadow-buttonPrimary-active);
+
+  /* Focus */
+  --color-buttonPrimary-focus: #{$white};
+  --borderColor-buttonPrimary-focus: var(--color-alt);;
+  --bgColor-buttonPrimary-focus: var(--color-alt);;
+  --shadow-buttonPrimary-focus: 21px 21px 30px #{rgba($black, 0.26)};
+
+  --color-buttonSecondary-focus: var(--color-buttonPrimary-focus);
+  --borderColor-buttonSecondary-focus: var(--borderColor-buttonPrimary-focus);
+  --bgColor-buttonSecondary-focus: var(--bgColor-buttonPrimary-focus);
+  --shadow-buttonSecondary-focus: var(--shadow-buttonPrimary-focus);
+
+  /* Disabled */
+  --color-buttonPrimary-disabled: #{$white};
+  --borderColor-buttonPrimary-disabled: transparent;
+  --bgColor-buttonPrimary-disabled: #{$black};
+
+  --color-buttonSecondary-disabled: var(--color-buttonPrimary-disabled);
+  --borderColor-buttonSecondary-disabled: var(--borderColor-buttonPrimary-disabled);
+  --bgColor-buttonSecondary-disabled: var(--bgColor-buttonPrimary-disabled);
+
+  /* Success */
+  // --color-buttonPrimary-success
+  // --borderColor-buttonPrimary-success
+  // --bgColor-buttonPrimary-success
+
+    /* Error */
+  // --color-buttonPrimary-error
+  // --borderColor-buttonPrimary-error
+  // --bgColor-buttonPrimary-error
+
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  * LINKS
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  /* Default */
+  --color-link: var(--color-alt);;
+ // --borderColor-link:
+ // --bgColor-link
+
+    /* Hover */
+  --color-link-hover: #{rgba($primary-color, 0.7)};
+ // --borderColor-link-hover
+ // --bgColor-link-hover
+
+    /* Active */
+  --color-link-active: #{rgba($primary-color, 0.7)};
+ // --borderColor-link-active
+ // --bgColor-link-active
+
+    /* Focus */
+  --color-link-focus: #{rgba($primary-color, 0.7)};
+ // --borderColor-link-focus
+ // --bgColor-link-focus
+ // --shadow-link-focus
+
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  * INPUTS
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+    /* Hover */
+  --borderColor-input-hover: var(--color-default);
+  --shadow-input-hover: none;
+
+    /* Focus */
+  --borderColor-input-focus: var(--color-default);
+  --shadow-input-focus: none;
+
+    /* Checked */
+  --color-input-checked: #{$white};
+  --borderColor-input-checked: var(--color-alt);
+  --bgColor-input-checked: var(--color-alt);
+  --shadow-input-checked: none;
+
+    /* Error */
+  --color-input-error: var(--color-alt);
+  --borderColor-input-error: var(--color-alt);
+
+}

@@ -1,0 +1,200 @@
+{% import '/helpers/product-helper.twig' as productFormatter %}
+
+  {# do calcs specific to myarchivino products #}
+  {% if entry.type == 'myarchivino' %}
+
+    {% set minBottles = 999999 %}
+    {% set maxBottles = 0 %}
+    {% set availableSizes = [] %}
+
+    {# probably useful for later #}
+    {# dump(max(woodtype.variantsTable|column('height'))) #}
+    {#    {% set availableSizes = availableSizes|merge(woodtype.variantsTable|column('height')) %}#}
+
+    {% for woodtype in entry.variantsMyarchivino.all() %}
+
+      {% for variant in woodtype.variantsTable %}
+
+        {# only work with values if variant is available #}
+        {% if variant.available %}
+
+          {# calc min bottle capacity #}
+          {% if variant.volumen < minBottles %}
+            {% set minBottles = variant.volumen %}
+          {% endif %}
+
+          {# calc max bottle capacity #}
+          {% if variant.volumen > maxBottles %}
+            {% set maxBottles = variant.volumen %}
+          {% endif %}
+
+          {# extract unique size values and store in new array #}
+          {% if variant.height not in availableSizes %}
+            {% set availableSizes = availableSizes|merge([variant.height]) %}
+          {% endif %}
+
+        {% endif %}
+
+      {% endfor %}
+
+    {% endfor %}
+
+  {% else %}
+
+    {% set availableSizes = entry.productHeight %}
+    {% set minBottles = entry.volume %}
+    {% set maxBottles = false %}
+
+  {% endif %}
+<section class="product-item container-wrapper mt-45">
+  <div class="container product-item-container">
+    <div class="product-item-images">
+      <div class="product-carousel owl-carousel">
+        {% if entry.productPictures|length %}
+          {% for productPicture in entry.productPictures.all() %}
+            <picture>
+              <a href="{{ productPicture.getUrl('galleryFull') }}" data-lightbox="product-gallery" data-title="{{ productPicture.title }}">
+                <img src="{{ productPicture.getUrl('productGallery') }}" alt="{{ productPicture.title }}">
+              </a>
+            </picture>
+          {% endfor %}
+        {% else %}
+          {% for i in 1..3 %}
+            <img src="https://picsum.photos/600/400" alt="">
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+    <div class="product-item-actions">
+      <div class="product-item-actions__description">
+
+        {% if entry.type == 'myarchivino' %}
+        <h2 class="my-archivino">
+          <span class="my">my</span><span class="archivino">archivino</span>
+        </h2>
+        {% else %}
+            <h2>{{ entry.title }}</h2>
+        {% endif %}
+
+        {{ entry.redactorTextSimplePlus }}
+      </div>
+
+      <div class="product-item-actions__variants">
+        <div class="product-item-actions__variant">
+          <label for="variant">
+            Holzart
+          </label>
+          <select name="variant" id="variant">
+            {% set initVariantId = '' %}
+            {% set initVariantName = '' %}
+            {% set initVariantPrice = '' %}
+
+            {% if entry.type == 'myarchivino' %}
+
+              {% for woodtypeVariant in entry.variantsMyarchivino.all() %}
+                {% for variant in woodtypeVariant.variantsTable %}
+                  {% if variant.available %}
+                    {% set variantId = (entry.title|lower|kebab) ~ '-' ~ (woodtypeVariant.woodtype.one().title ~ '-' ~ variant.beschreibung ~ '-' ~ variant.volumen)|lower|kebab %}
+                    {% set variantName = entry.title ~ ' (' ~ woodtypeVariant.woodtype.one().title ~ ' / ' ~ variant.beschreibung ~ ')' %}
+
+                    {% if initVariantId is empty %}
+                      {% set initVariantId = variantId %}
+                      {% set initVariantName = variantName %}
+                      {% set initVariantPrice = variant.preis %}
+                    {% endif %}
+
+                    <option data-variant-id="{{ variantId }}" data-name="{{ variantName }}" value="{{ variant.preis }}">{{ woodtypeVariant.woodtype.one().title }} - {{ variant.beschreibung }} für {{ variant.volumen }} Fl.</option>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+
+            {% else %}
+
+              {% for woodtypeVariant in entry.variantsDefault.all() %}
+                {% if woodtypeVariant.available %}
+                  {% set variantId = (entry.title|lower|kebab) ~ '-' ~ (woodtypeVariant.woodtype.one().title)|lower|kebab %}
+                  {% set variantName = entry.title ~ ' (' ~ woodtypeVariant.woodtype.one().title ~ ')' %}
+
+                  {% if initVariantId is empty %}
+                    {% set initVariantId = variantId %}
+                    {% set initVariantName = variantName %}
+                    {% set initVariantPrice = woodtypeVariant.price %}
+                  {% endif %}
+
+                  <option data-variant-id="{{ variantId }}" data-name="{{ variantName }}" value="{{ woodtypeVariant.price|number_format(2, '.', "'") }}">{{ woodtypeVariant.woodtype.one().title }}</option>
+                {% endif %}
+              {% endfor %}
+
+            {% endif %}
+          </select>
+        </div>
+      </div>
+
+      <div class="product-item-actions__cart">
+        <div class="product-price">
+          <span class="fs-15">{{ entry.type == 'customized' ? 'ab ' : '' }}</span> <span id="product-price">CHF {{ initVariantPrice|number_format(2, '.', "'") }}</span>
+        </div>
+        {% if entry.orderable %}
+        <button
+            id="add-to-cart"
+            class="btn btn-primary snipcart-add-item"
+
+            data-item-id="{{ initVariantId }}"
+            data-item-price="{{ initVariantPrice|number_format(2, '.', "'") }}"
+            data-item-url="{{ entry.url }}?sc=1"
+            data-item-name="{{ initVariantName }}"
+{#            data-item-description="DESCRIPTION"#}
+{#            data-item-image="IMAGE_PATH"#}
+{#            data-item-name="PRODUCT_NAME"#}
+{#            data-item-custom1-name="VARIANT_NAME"#}
+{#            data-item-custom1-options="Black|Brown|Gold"#}
+        >
+          in den Warenkorb
+        </button>
+        {% else %}
+          <p>Bitte kontaktieren Sie uns für eine Offerte.</p>
+        {% endif %}
+      </div>
+
+    </div>
+
+
+
+    <div class="product-item-facts">
+      <h3>Facts</h3>
+      <ul class="product-item-facts-list">
+        {% if entry.type != 'customized' %}
+          <li class="product-item-fact">
+            <div class="product-fact-key">Breite</div>
+            <div class="product-fact-value">{{ entry.type == 'customized' ? 'ab ' : '' }}{{ entry.productWidth }} cm</div>
+          </li>
+          <li class="product-item-fact">
+            <div class="product-fact-key">Höhe</div>
+            <div class="product-fact-value">{{ entry.type == 'customized' ? 'ab ' : '' }}{{ productFormatter.formatProductHeight(availableSizes) }} cm</div>
+          </li>
+        {% endif %}
+        <li class="product-item-fact">
+          <div class="product-fact-key">Volumen</div>
+          <div class="product-fact-value">{{ entry.type == 'customized' ? 'ab ' : '' }}{{ productFormatter.formatProductVolume(minBottles, maxBottles) }} Flaschen</div>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</section>
+
+<script>
+    const button = document.querySelector('#add-to-cart');
+    const variant = document.querySelector('#variant');
+    const productPrice = document.querySelector('#product-price');
+    variant.addEventListener('change', () => {
+      const selectedVariant = variant.options[variant.selectedIndex];
+      {% if entry.orderable %}
+      button.setAttribute("data-item-id", selectedVariant.getAttribute('data-variant-id'));
+      button.setAttribute("data-item-price", variant.value);
+      button.setAttribute("data-item-name", selectedVariant.getAttribute('data-name'));
+      {% endif %}
+      productPrice.innerHTML = "CHF " + variant.value;
+    });
+</script>

@@ -1,0 +1,45 @@
+columnSuffix: cddtyilu
+contentColumnType: string
+handle: kreisSchriftstil
+instructions: 'Schriftstil für den Text innerhalb des Kreises.'
+name: Kreis-Schriftstil
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Normal
+        -
+          - value
+          - circle-regular
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Leicht
+        -
+          - value
+          - circle-light
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Fett
+        -
+          - value
+          - circle-bold
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,18 @@
+columnSuffix: afxulwfd
+contentColumnType: text
+handle: lastname
+instructions: null
+name: Nachname
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

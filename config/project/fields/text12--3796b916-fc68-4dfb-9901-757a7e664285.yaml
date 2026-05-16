@@ -1,0 +1,24 @@
+columnSuffix: null
+handle: text12
+instructions: null
+name: 'Inhalt - Icon-Text-Icon-Text - Icon-Text-Icon-Text - Text'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: SimplePlus.json
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: true
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

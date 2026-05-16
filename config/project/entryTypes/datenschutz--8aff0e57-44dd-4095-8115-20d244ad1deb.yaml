@@ -1,0 +1,108 @@
+fieldLayouts:
+  eaee1930-9386-412d-8614-a6a3a1b4e2b7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 483c7d69-599d-4cc6-ae00-1aacaf232fe9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45ef0af1-1b38-4f7a-b765-fa76c6e1d51b # Header-Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4ff00ee0-9c41-4260-9ff2-96da8b4a17eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Der Inhalt der Datenschutzerklärung wird direkt von einem externen Partner geliefert und laufend aktualisiert. Eine Bearbeitung ist daher nicht möglich.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 23906574-766c-4baf-bd53-3c30843aca93
+            userCondition: null
+        name: Inhalt
+        uid: 1ceb8f0a-ddf5-464a-b00e-5d2fdce81d09
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1df30819-5074-43c0-ad63-c36e470d254b # Meta-Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f3715d2-2ab3-4dc2-8b10-fcb1e6e73bc3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29c1a5d4-669a-413c-9232-e1e4950ab0bc # Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a2e95fc-fd63-405c-bed8-a12b03dfa94d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9e91a70-6b6d-425d-a869-238d3c1d0608 # Suchmaschinen-Indexierung deaktivieren
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 626cd4f1-fc9d-4496-bdb5-cc883508f3f2
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: f59289ab-2fd0-4284-a879-8c2f5fce2771
+        userCondition: null
+handle: datenschutz
+hasTitleField: false
+name: Datenschutz
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

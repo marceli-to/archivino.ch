@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: spezielleBloecke
+instructions: 'Spezielle Blöcke die nur auf bestimmten Seiten vorkommen'
+name: 'Content-Blöcke - Spezielles - Spezielle Blöcke'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 151725d3-921b-4b94-8efb-a79b9f023488 # Content-Blöcke - Spezielles - Spezielle Blöcke Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

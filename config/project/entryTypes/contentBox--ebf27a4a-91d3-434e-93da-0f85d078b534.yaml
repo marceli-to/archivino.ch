@@ -1,0 +1,93 @@
+color: null
+fieldLayouts:
+  6bf10f82-4b10-4b3d-8e1e-fedced51dfb1:
+    cardView:
+      - 'layoutElement:0c1dab3b-7460-4a15-995d-fa08a7786365'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 38430b0e-4149-4c59-9289-9958508c2675
+            handle: titel
+            instructions: null
+            label: Titel
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c1dab3b-7460-4a15-995d-fa08a7786365
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 88b96b37-eff5-40b7-91cc-9dbd4f00da8f
+            handle: text
+            instructions: null
+            label: Text
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2333ff03-7a85-42ea-ac25-813819d88d3e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 066820c4-c9b5-4088-b69f-e0e262e3ee63 # Content-Blöcke - Content-Box - Button (optional)
+            handle: button
+            instructions: null
+            label: 'Button (optional)'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe9759ab-fced-46a5-95ce-f6a5356862b4
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 2d9b9db6-d737-481f-9110-aaf8a4445697
+            handle: null
+            instructions: null
+            label: Box-Farbe
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee0b6034-b317-4f65-b4c7-9fdb579302ad
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 51d61b0e-ad07-442e-9443-00e469fd5f5b
+            handle: null
+            instructions: null
+            label: Text-Ausrichtung
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 641aad45-be8e-4aa9-b06d-8425c4033c27
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 837f7d62-e191-4e52-a3cd-c29ba1a4a918
+        userCondition: null
+handle: contentBox
+hasTitleField: false
+icon: null
+name: Content-Box
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

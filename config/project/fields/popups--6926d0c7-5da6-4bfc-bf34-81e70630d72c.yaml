@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: popups
+instructions: null
+name: 'Kundentypen Popups'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 21482e70-cb7a-4278-b82e-2e57dfc1433d # Kundentypen Popups Block
+  includeTableView: false
+  maxEntries: 6
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

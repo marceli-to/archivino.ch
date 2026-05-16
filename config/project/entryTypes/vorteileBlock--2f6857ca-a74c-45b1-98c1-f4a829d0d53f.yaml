@@ -1,0 +1,37 @@
+color: null
+fieldLayouts:
+  aaa8df23-ebac-465a-afd6-dc96214cd529:
+    cardView:
+      - 'layoutElement:cbc229f1-89ae-47cc-9924-b307ff63884e'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 46b8aa6f-0600-4448-b3fa-18417e3fe598
+            handle: text
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cbc229f1-89ae-47cc-9924-b307ff63884e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fda125ba-e569-4c70-bac7-0ee0608119aa
+        userCondition: null
+handle: vorteileBlock
+hasTitleField: false
+icon: null
+name: 'Vorteile Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,106 @@
+fieldLayouts:
+  68231217-2517-4f96-a160-9a4e6b77d5f4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e7046874-6d1f-4e00-aac4-c23e00f7141e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45ef0af1-1b38-4f7a-b765-fa76c6e1d51b # Header-Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91b7d809-8c4d-4dd1-b72e-91db9cf2bc67
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Inhalt
+            type: craft\fieldlayoutelements\Heading
+            uid: f1783d03-18d3-406d-9d50-172e4154b33b
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65acc570-cc1b-4a83-8f9b-2255891c82a7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: fa7d1de6-b18c-4c85-ac52-3e3b9197edf0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1df30819-5074-43c0-ad63-c36e470d254b # Meta-Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de895dd2-a6e0-4065-97d7-1b2698336b0c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29c1a5d4-669a-413c-9232-e1e4950ab0bc # Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c40087ef-1d9e-40d6-90f4-2869fa69fead
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: a0283fe8-a8c3-43df-957b-98b4964b7c12
+        userCondition: null
+handle: loesungen
+hasTitleField: false
+name: Lösungen
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

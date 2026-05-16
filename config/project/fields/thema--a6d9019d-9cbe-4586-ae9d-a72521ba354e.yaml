@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+handle: thema
+instructions: null
+name: Thema
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: 1
+  localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Thema auswählen'
+  showSiteMenu: false
+  source: 'group:4dbbd3a1-c226-45dc-a0fc-803c378a3a9e'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

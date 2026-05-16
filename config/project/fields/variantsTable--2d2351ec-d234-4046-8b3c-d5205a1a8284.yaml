@@ -1,0 +1,113 @@
+columnSuffix: null
+handle: variantsTable
+instructions: null
+name: 'Varianten - Varianten'
+searchable: false
+settings:
+  addRowLabel: 'Zeile hinzufügen'
+  columns:
+    __assoc__:
+      -
+        - col5
+        -
+          __assoc__:
+            -
+              - heading
+              - Beschreibung
+            -
+              - handle
+              - beschreibung
+            -
+              - width
+              - 60%
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Höhe
+            -
+              - handle
+              - height
+            -
+              - width
+              - 10%
+            -
+              - type
+              - number
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - Volumen
+            -
+              - handle
+              - volumen
+            -
+              - width
+              - 10%
+            -
+              - type
+              - number
+      -
+        - col4
+        -
+          __assoc__:
+            -
+              - heading
+              - Preis
+            -
+              - handle
+              - preis
+            -
+              - width
+              - 10%
+            -
+              - type
+              - number
+      -
+        - col6
+        -
+          __assoc__:
+            -
+              - heading
+              - Verfügbar
+            -
+              - handle
+              - available
+            -
+              - width
+              - ''
+            -
+              - type
+              - lightswitch
+  defaults:
+    -
+      __assoc__:
+        -
+          - col5
+          - ''
+        -
+          - col2
+          - ''
+        -
+          - col3
+          - ''
+        -
+          - col4
+          - ''
+        -
+          - col6
+          - '1'
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

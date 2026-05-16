@@ -1,0 +1,87 @@
+{% set form = freeform.form("contactForm") %}
+
+<section class="contact-form container-wrapper mt-45">
+  <div class="container contact-form-container">
+    {{ form.renderTag({
+      returnUrl: craft.app.request.url ~ "?success#success",
+      attributes: { class: "contact-form-form shadow", id: "contact-form"},
+      disable: ["submitButtons"],
+      values: { thema: entry.title }
+    }) }}
+      <h2>Mitteilung</h2>
+
+      {% if form.submittedSuccessfully %}
+      <div class="alert alert-success" id="success">
+        <p>
+          {{ globalSettings.versandbestaetigungKontaktformular }}
+        </p>
+      </div>
+      {% endif %}
+
+      {# General Error Handling #}
+      {% if form.hasErrors %}
+        <div class="alert alert-error" role="alert">
+          {{ "Leider ist ein Fehler bei der Übertragung aufgetreten."|t }}
+          Probleme:<br>
+          {% if form.errors|length %}
+            <ul>
+              {% for error in form.errors %}
+                <li>{{ error|t }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% for field in form.fields %}
+            {% if field.hasErrors and field.errors|length %}
+              <ul class="errors">
+                {% for error in field.errors %}
+                  <li>{{ field.name }}: {{ error|t }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="form-group">
+        <div class="form-control">
+          <input type="text" name="vorname" required placeholder="Vorname*">
+        </div>
+        <div class="form-control">
+          <input type="text" name="name" required placeholder="Name*">
+        </div>
+        <div class="form-control">
+          <input type="text" name="strasseNr" required placeholder="Strasse / Nr.*">
+        </div>
+        <div class="form-control">
+          <input type="text" name="pLZOrt" required placeholder="PLZ / Ort*">
+        </div>
+        <div class="form-control">
+          <input type="email" name="email" required placeholder="E-Mail*">
+        </div>
+        <div class="form-control">
+          <input type="tel" name="telefon" placeholder="Telefon">
+        </div>
+        <div class="form-control">
+          <textarea name="message" placeholder="Mitteilung"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-control">
+          {% set randomId = random() %}
+          <input class="privacy_form_input" name="datenschutz" type="checkbox" id="form-input-datenschutz_{{ randomId }}" value="1" required>
+          <label class="privacy_form_label" for="form-input-datenschutz_{{ randomId }}" >Ich habe die <a href="/datenschutz" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere diese.</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="form-action">
+          {% set button = form.currentPage.buttons %}
+          <button {{ button.submitRenderProps({ class: "btn btn-primary" }) }}>
+            Absenden
+          </button>
+        </div>
+      </div>
+    {{ form.renderClosingTag }}
+    <div class="contact-form-dots dots"></div>
+  </div>
+</section>

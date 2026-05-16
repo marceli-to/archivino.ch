@@ -1,0 +1,86 @@
+{% import '/macros/link.twig' as LinkMacro %}
+{# block.marginTop = mt-22|mt-45|mt-90 (=25% / 50% / 100%) #}
+  {% if block.media|length %}
+
+    {% if block.align == 'left' %}
+
+      {% set sectionClass = "image-text" %}
+
+    {% elseif block.align == 'right' %}
+
+      {% set sectionClass = "text-image" %}
+
+    {% endif %}
+
+    {% if block.media.one().kind == 'video' %}
+      {% set sectionClass = sectionClass|replace({'image': 'video'}) %}
+    {% endif %}
+
+    {% if block.titel == "" %}
+
+      {% set sectionClass = sectionClass ~ ' no-title' %}
+
+    {% endif %}
+
+  {% else %}
+
+    {% set sectionClass = "text" %}
+
+  {% endif %}
+
+<section class="text-section container-wrapper {{ sectionClass }} {{ block.marginTop }} bg-{{ block.color }} {{ block.shadow ? 'shadow' : '' }}" id="{{ anchorSelector }}">
+  <div class="container">
+    <div class="text-block">
+
+      {% if block.align == 'right' %}
+      <div class="text-content {{ block.isLeadText is defined and block.isLeadText == true ? 'lead' : '' }}">
+        {# block.titleType = h1|h2|h3 #}
+        <h2 class="{{ block.titleType ?? 'h2' }} title">{{ block.titel }}</h2>
+        {{ block.redactorText }}
+      </div>
+      {% endif %}
+
+      {% if block.media|length %}
+        {% if block.media.one().kind == 'image' %}
+          <div class="text-picture {{ block.linkField.value|default(null) is empty ? '' : 'shadow' }}">
+            <picture>
+
+              {% if block.linkField.value|default(null) is empty != true %}
+                {{ LinkMacro.linkOpenTag(block.linkField) }}
+              {% endif %}
+
+              <img src="{{ block.media.one().getUrl('inText') }}" alt="{{ block.media.one().title }}">
+
+              {% if block.linkField.value|default(null) is empty != true %}
+                </a>
+              {% endif %}
+
+            </picture>
+          </div>
+        {% endif %}
+
+        {% if block.media.one().kind == 'video' %}
+          {% if block.media.one().videoPoster|length %}
+            {% set videoPoster = 'poster=' ~ block.media.one().videoPoster.one().getUrl() %}
+          {% endif %}
+        <div class="text-video">
+          <video controls playsinline preload="metadata" {{ videoPoster ?? '' }}>
+            <source src="{{ block.media.one().getUrl() }}" type="video/mp4">
+          </video>
+        </div>
+        {% endif %}
+      {% endif %}
+
+      {% if block.align == 'left' %}
+        <div class="text-content {{ block.isLeadText is defined and block.isLeadText == true ? 'lead' : '' }}">
+          {# block.titleType = h1|h2|h3 #}
+          <h2 class="{{ block.titleType ?? 'h2' }} title">{{ block.titel }}</h2>
+          {% if block.redactorText != '' %}
+            {{ block.redactorText }}
+          {% endif %}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<section class="testimonials container-wrapper {{ block.marginTop }}">
+  <div class="container testimonial-container">
+    <div class="testimonial-dots dots"></div>
+    <div class="testimonial-carousel owl-carousel">
+
+      {% for testimonial in craft.entries.section('testimonialVerwaltung').all() %}
+      <article class="testimonial">
+        {% if testimonial.testimonialImage|length %}
+        <picture>
+          <img src="{{ testimonial.testimonialImage.one().getUrl('testimonials') }}" alt="{{ testimonial.testimonialImage.one().title }}">
+        </picture>
+        {% endif %}
+        <blockquote class="blockquote">
+          <div class="blockquote-text">
+            {{ testimonial.redactorTextSimplePlus }}
+          </div>
+          <footer class="blockquote-footer">{{ testimonial.title }}</footer>
+        </blockquote>
+      </article>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

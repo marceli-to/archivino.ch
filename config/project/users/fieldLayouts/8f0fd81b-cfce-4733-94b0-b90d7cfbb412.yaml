@@ -1,0 +1,73 @@
+tabs:
+  -
+    elementCondition: null
+    elements:
+      -
+        elementCondition: null
+        heading: Personalien
+        type: craft\fieldlayoutelements\Heading
+        uid: 0e7df0a5-72f5-4d28-8c6d-0fd9f3eee62f
+        userCondition: null
+      -
+        elementCondition: null
+        fieldUid: 8e4e3768-a4a9-4988-be55-075e97aed157 # Firmenname
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 092b8e39-1224-437b-ac2b-e3946678d7b3
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 334dc69c-b2cf-4859-9cbd-ce95e881cb97 # Telefon
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: c107b874-e599-4c81-a869-3f932e7eb32a
+        userCondition: null
+        warning: null
+        width: 50
+      -
+        elementCondition: null
+        fieldUid: 479ec2fa-ddb7-4750-b07a-ed794e759d6d # Social Profiles
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: a5f2d004-abb1-4354-bc9a-f1bf626deb97
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        heading: Details
+        type: craft\fieldlayoutelements\Heading
+        uid: 7bca2950-ed7e-4537-b032-9c54737038b8
+        userCondition: null
+      -
+        elementCondition: null
+        heading: Medien
+        type: craft\fieldlayoutelements\Heading
+        uid: 4b5ebaca-0ae7-4e85-8d43-7bde001347b3
+        userCondition: null
+      -
+        elementCondition: null
+        fieldUid: 07d8e39d-c7ad-412f-a60e-886ee471ddfd # Portrait
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: ba5075bf-ab70-4bb0-856f-1e6f3e0dffb3
+        userCondition: null
+        warning: null
+        width: 100
+    name: Mitglieder-Profil
+    uid: c965fe77-a9eb-4108-8dde-9530c8ad4d0c
+    userCondition: null

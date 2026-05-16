@@ -1,0 +1,63 @@
+.icons-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  @include for-tablet-portrait-up{
+    gap: 3rem;
+  }
+  @include for-tablet-landscape-up{
+    gap: 8rem;
+  }
+}
+.icon{
+  display: flex;
+  cursor: pointer;
+
+  figure{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding-bottom: 3rem;
+  }
+
+  img{
+    width: 90%;
+    @include animate(transform);
+  }
+
+  figcaption{
+    position: absolute;
+    bottom: 0;
+    margin-top: auto;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: 0.7rem;
+    @include for-tablet-portrait-up{
+      font-size: 0.9rem;
+    }
+    @include for-tablet-landscape-up{
+      font-size: 1rem;
+    }
+
+    @include animate(color);
+  }
+
+  &:hover{
+    img{
+      transform: scale(1.1);
+    }
+    figcaption{
+      color:  $primary-color;
+    }
+  }
+
+  .description{
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+}

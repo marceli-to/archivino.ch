@@ -1,0 +1,125 @@
+description: null
+handle: poweruser
+name: Poweruser
+permissions:
+  - accesscp
+  - accessplugin-navigation
+  - 'createentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'createentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'createentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'createfolders:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deleteassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deletecategories:ab863891-928b-4eea-a1a2-dcdc008bdfab' # Holzarten
+  - 'deleteentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'deleteentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'deleteentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'deletepeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deletepeercategorydrafts:ab863891-928b-4eea-a1a2-dcdc008bdfab' # Holzarten
+  - 'deletepeerentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'deletepeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'deletepeerentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'deletepeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'deletepeerentrydrafts:1a7e6945-84e2-4299-b0de-bd25cae6a619' # AGB
+  - 'deletepeerentrydrafts:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'deletepeerentrydrafts:1d67e32d-e3be-48d8-96a8-bd245cbf0e0c' # Marken- und Designschutz
+  - 'deletepeerentrydrafts:252e6657-29ee-429b-a911-58b28d003759'
+  - 'deletepeerentrydrafts:569b6cc5-a027-4bec-8c25-b70fdc86ce81' # Widerrufsbelehrung
+  - 'deletepeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'deletepeerentrydrafts:735e9d44-2030-47f7-9b87-2b50cedbc2e1' # Produkte
+  - 'deletepeerentrydrafts:7527c347-c4e1-403c-a6e3-a891b7b6d81b' # Werte
+  - 'deletepeerentrydrafts:80664be5-5322-4172-8d0a-648e560ba16e'
+  - 'deletepeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'deletepeerentrydrafts:871e7bc1-123f-4cd1-acde-d7cfeb6ef501' # Lösungen
+  - 'deletepeerentrydrafts:a8e7d0eb-7a6a-422c-a8e2-5dd2d4044c06' # Funktion
+  - 'deletepeerentrydrafts:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'deletepeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'deletepeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'editentries:252e6657-29ee-429b-a911-58b28d003759'
+  - 'editentries:80664be5-5322-4172-8d0a-648e560ba16e'
+  - 'editglobalset:13dab699-ff85-46be-aeca-ccf3161c7a2e' # Einstellungen
+  - 'editglobalset:8a3c23f8-0bc3-4c8c-bfc5-7c2e2f5f4c19' # Allgemein
+  - 'editglobalset:ce30cbb9-70d2-43a6-8acc-1f9d1a4187ba' # SEO
+  - 'editimages:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'editpeerentrydrafts:252e6657-29ee-429b-a911-58b28d003759'
+  - 'editpeerentrydrafts:80664be5-5322-4172-8d0a-648e560ba16e'
+  - 'editpeerimages:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'navigation-managenav:d96189f8-5ee1-420a-855b-aa2b2eef7409' # Navigation
+  - 'publishentries:252e6657-29ee-429b-a911-58b28d003759'
+  - 'publishentries:80664be5-5322-4172-8d0a-648e560ba16e'
+  - 'publishpeerentrydrafts:252e6657-29ee-429b-a911-58b28d003759'
+  - 'publishpeerentrydrafts:80664be5-5322-4172-8d0a-648e560ba16e'
+  - 'replacefiles:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'replacepeerfiles:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'saveassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'savecategories:ab863891-928b-4eea-a1a2-dcdc008bdfab' # Holzarten
+  - 'saveentries:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'saveentries:1a7e6945-84e2-4299-b0de-bd25cae6a619' # AGB
+  - 'saveentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'saveentries:1d67e32d-e3be-48d8-96a8-bd245cbf0e0c' # Marken- und Designschutz
+  - 'saveentries:569b6cc5-a027-4bec-8c25-b70fdc86ce81' # Widerrufsbelehrung
+  - 'saveentries:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'saveentries:735e9d44-2030-47f7-9b87-2b50cedbc2e1' # Produkte
+  - 'saveentries:7527c347-c4e1-403c-a6e3-a891b7b6d81b' # Werte
+  - 'saveentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'saveentries:871e7bc1-123f-4cd1-acde-d7cfeb6ef501' # Lösungen
+  - 'saveentries:a8e7d0eb-7a6a-422c-a8e2-5dd2d4044c06' # Funktion
+  - 'saveentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'saveentries:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'saveentries:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'savepeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'savepeercategorydrafts:ab863891-928b-4eea-a1a2-dcdc008bdfab' # Holzarten
+  - 'savepeerentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'savepeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'savepeerentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'savepeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'savepeerentrydrafts:1a7e6945-84e2-4299-b0de-bd25cae6a619' # AGB
+  - 'savepeerentrydrafts:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'savepeerentrydrafts:1d67e32d-e3be-48d8-96a8-bd245cbf0e0c' # Marken- und Designschutz
+  - 'savepeerentrydrafts:569b6cc5-a027-4bec-8c25-b70fdc86ce81' # Widerrufsbelehrung
+  - 'savepeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'savepeerentrydrafts:735e9d44-2030-47f7-9b87-2b50cedbc2e1' # Produkte
+  - 'savepeerentrydrafts:7527c347-c4e1-403c-a6e3-a891b7b6d81b' # Werte
+  - 'savepeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'savepeerentrydrafts:871e7bc1-123f-4cd1-acde-d7cfeb6ef501' # Lösungen
+  - 'savepeerentrydrafts:a8e7d0eb-7a6a-422c-a8e2-5dd2d4044c06' # Funktion
+  - 'savepeerentrydrafts:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'savepeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'savepeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'viewassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'viewcategories:ab863891-928b-4eea-a1a2-dcdc008bdfab' # Holzarten
+  - 'viewentries:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'viewentries:1a7e6945-84e2-4299-b0de-bd25cae6a619' # AGB
+  - 'viewentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'viewentries:1d67e32d-e3be-48d8-96a8-bd245cbf0e0c' # Marken- und Designschutz
+  - 'viewentries:569b6cc5-a027-4bec-8c25-b70fdc86ce81' # Widerrufsbelehrung
+  - 'viewentries:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'viewentries:735e9d44-2030-47f7-9b87-2b50cedbc2e1' # Produkte
+  - 'viewentries:7527c347-c4e1-403c-a6e3-a891b7b6d81b' # Werte
+  - 'viewentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'viewentries:871e7bc1-123f-4cd1-acde-d7cfeb6ef501' # Lösungen
+  - 'viewentries:a8e7d0eb-7a6a-422c-a8e2-5dd2d4044c06' # Funktion
+  - 'viewentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'viewentries:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'viewentries:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'viewpeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'viewpeercategorydrafts:ab863891-928b-4eea-a1a2-dcdc008bdfab' # Holzarten
+  - 'viewpeerentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'viewpeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'viewpeerentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'viewpeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'viewpeerentrydrafts:1a7e6945-84e2-4299-b0de-bd25cae6a619' # AGB
+  - 'viewpeerentrydrafts:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'viewpeerentrydrafts:1d67e32d-e3be-48d8-96a8-bd245cbf0e0c' # Marken- und Designschutz
+  - 'viewpeerentrydrafts:569b6cc5-a027-4bec-8c25-b70fdc86ce81' # Widerrufsbelehrung
+  - 'viewpeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'viewpeerentrydrafts:735e9d44-2030-47f7-9b87-2b50cedbc2e1' # Produkte
+  - 'viewpeerentrydrafts:7527c347-c4e1-403c-a6e3-a891b7b6d81b' # Werte
+  - 'viewpeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'viewpeerentrydrafts:871e7bc1-123f-4cd1-acde-d7cfeb6ef501' # Lösungen
+  - 'viewpeerentrydrafts:a8e7d0eb-7a6a-422c-a8e2-5dd2d4044c06' # Funktion
+  - 'viewpeerentrydrafts:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'viewpeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'viewpeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'changeauthorforpeerentries:cb6afbbe-9f09-4aca-afaa-9faf441a8db4' # Kundenstimmen-Verwaltung
+  - 'changeauthorforpeerentries:1b839cde-1323-4c4b-b942-738885b3c8c7' # Produkt-Verwaltung
+  - 'changeauthorforpeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung

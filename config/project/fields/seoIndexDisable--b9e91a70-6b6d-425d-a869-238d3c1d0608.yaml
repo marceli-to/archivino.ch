@@ -1,0 +1,13 @@
+columnSuffix: bgmddpgu
+contentColumnType: boolean
+handle: seoIndexDisable
+instructions: 'Achtung: Wenn diese Option aktiviert wird, verschwindet diese spezifische Seite aus dem Google-Such-Index'
+name: 'Suchmaschinen-Indexierung deaktivieren'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

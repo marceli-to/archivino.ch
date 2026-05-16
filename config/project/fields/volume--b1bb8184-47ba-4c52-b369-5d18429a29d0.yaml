@@ -1,0 +1,19 @@
+columnSuffix: vmavvqys
+contentColumnType: integer(10)
+handle: volume
+instructions: null
+name: Volumen
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: Flaschen
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

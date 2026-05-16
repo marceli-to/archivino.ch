@@ -1,0 +1,30 @@
+
+{% macro link(linkFieldHandle, content, css) %}
+
+{% set link = linkFieldHandle %}
+
+{% tag 'a' with {
+    href: link.value,
+    target: link.target,
+    rel: link.target == '_blank' ? 'noopener noreferrer' : null,
+    class: css
+  } -%}
+   {{ content == "" ? link.label : content }}
+{%- endtag %}
+{% endmacro %}
+
+
+{% macro linkOpenTag(linkFieldHandle, css) %}
+
+{%- set link = linkFieldHandle -%}
+
+   <a 
+   href="{{ link.value }}" 
+   {% if link.target is not null %}
+     target="{{ link.target }}" 
+     rel="{{ link.target == '_blank' ? 'noopener noreferrer' : '' }}"
+   {% endif %}
+   class="{{ css }}">
+
+
+{%- endmacro -%}

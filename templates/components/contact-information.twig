@@ -1,0 +1,19 @@
+<div class="contact-information">
+    <h2>Kontakt</h2>
+    <p>
+        {{ entry.redactorTextSimplePlus }}
+    </p>
+    <div class="contact-company">
+        <div>
+            <strong>{{ globalInformation.company }}</strong><br>
+            {{ globalInformation.address|nl2br }}<br>
+            {{ globalInformation.zip }} {{ globalInformation.city }}<br>
+        </div>
+        <div>
+            <br>
+            <a href="tel:{{ globalInformation.phone|slice(1)|replace(' ', '') }}" title="{{ globalInformation.phone }} anrufen">T {{ globalInformation.phone }}</a><br>
+            <a href="mailto:{{ globalInformation.eMail }}" title="E-Mail an {{ globalInformation.eMail }} senden">{{ globalInformation.eMail }}</a><br>
+            <a href="https://www.archivino.ch" title="Archivino">www.archivino.ch</a>
+        </div>
+    </div>
+</div>

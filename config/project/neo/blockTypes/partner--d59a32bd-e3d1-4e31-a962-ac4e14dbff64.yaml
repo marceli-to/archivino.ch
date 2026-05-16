@@ -1,0 +1,58 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  793c85cb-ab66-43b9-ac08-c4724aea55d3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: bfd8adb6-3938-41d1-b348-a3aeaef22ddc # TextCols
+            instructions: null
+            label: Partner
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d761cd4a-f43b-46cc-a13c-1711986d3f85
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: f7fcfcb3-acae-4984-a4cd-5bf794c1fa49
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8636c65-84ba-4949-80cc-cce59f040939
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: 99204c9c-bec3-468b-8908-cc76c25fb19a
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121
+groupChildBlockTypes: true
+handle: partner
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Partner
+topLevel: true

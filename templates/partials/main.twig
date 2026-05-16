@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="dns-prefetch" href="https://use.typekit.net/">
+    <link rel="dns-prefetch" href="{{ getenv('CDN_URL') }}">
+    <link rel="dns-prefetch" href="https://code.jquery.com/">
+    <link rel="dns-prefetch" href="https://cdn.snipcart.com/">
+    
+    <link rel="preconnect" href="https://use.typekit.net/" crossorigin>
+    <link rel="preconnect" href="{{ getenv('CDN_URL') }}" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com/" crossorigin>
+    <link rel="preconnect" href="https://cdn.snipcart.com/" crossorigin>
+    
+    {% if devMode or entry.seoIndexDisable %}
+        <meta name="robots" content="noindex">
+    {% endif %}
+
+    <title>ARCHIVINO{{ " - " ~ entry.title ?? '' }}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/qol8vub.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lightbox.min.css">
+    <link rel="stylesheet" href="/styles.css?v=4">
+
+    <style>
+        .g-recaptcha {
+            /*transform: scale(0.77);*/
+            /*transform-origin: 0 0;*/
+            margin: 1rem 0 1rem 0;
+        }
+    </style>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+            
+    {% block css %}{% endblock %}
+
+    {% block head %}{% endblock %}
+
+    {% if entry.seoMetaDescription is defined and entry.seoMetaDescription %}
+        <meta name="description" content="{{ entry.seoMetaDescription }}"/>
+    {% elseif seo.seoMetaDescription %}
+        <meta name="description" content="{{ seo.seoMetaDescription }}"/>
+    {% endif %}
+
+    {% if entry.seoKeywords is defined and entry.seoKeywords %}
+        <meta name="keywords" content="{{ entry.seoKeywords }}"/>
+    {% elseif seo.seoMetaDescription %}
+        <meta name="keywords" content="{{ seo.seoKeywords }}"/>
+    {% endif %}
+
+    {% if craft.app.config.env == 'production' %}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7XS11MT8Y"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-W7XS11MT8Y', { 'anonymize_ip': true });
+        </script>
+    {% endif %}
+</head>
+<body>
+
+<script>
+    window.SnipcartSettings = {
+        publicApiKey: '{{ getenv('SNIPCART_KEY') }}',
+        // loadStrategy: 'on-user-interaction',
+        // timeoutDuration: 10,
+        modalStyle: "side",
+        version: "3.4.0"
+    };
+
+    (()=>{var a,d;(d=(a=window.SnipcartSettings).version)!=null||(a.version="3.0");var s,S;(S=(s=window.SnipcartSettings).currency)!=null||(s.currency="chf");var l,p;(p=(l=window.SnipcartSettings).timeoutDuration)!=null||(l.timeoutDuration=2750);var w,u;(u=(w=window.SnipcartSettings).domain)!=null||(w.domain="cdn.snipcart.com");var m,g;(g=(m=window.SnipcartSettings).protocol)!=null||(m.protocol="https");var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var c=!1;function o(){if(c)return;c=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),h(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),f.forEach(v=>document.removeEventListener(v,o))}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script>
+
+{% import '/macros/image.twig' as HeaderImage %}
+
+{% include '/partials/layout/header.twig' %}
+<section class="header-image">
+    {# if product item page: load product parent page for header area #}
+    {% if entry.section == 'Produkt-Verwaltung' %}
+        {% set productHeader = craft.entries().section('produktePage').one() %}
+        {{ HeaderImage.Image(productHeader.headerBild.one()) }}
+    {% else %}
+        {{ HeaderImage.Image(entry.headerBild.one()) }}
+    {% endif %}
+</section>
+
+
+<main class="main-content animate-elements">
+    {% block content %}{% endblock %}
+</main>
+
+{% include '/partials/layout/footer.twig' %}
+
+<script src="/js/plugins/lazysizes.min.js" async=""></script>
+<script src="/js/plugins/owl.carousel.min.js"></script>
+<script src="/js/plugins/lightbox2.js"></script>
+<script src="/js/app.js?v=2"></script>
+</body>
+</html>

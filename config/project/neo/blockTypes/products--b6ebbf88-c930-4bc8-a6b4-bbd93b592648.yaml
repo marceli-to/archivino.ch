@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  4ada4933-f2b5-4e22-aee2-87b90fa5f5d9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle werden die Produkte aufgelistet.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 0f0844fc-c406-47da-9945-c7ea46b7b31f
+            userCondition: null
+        name: Inhalt
+        uid: 1491919a-a086-4ad5-b90d-cda68c3e4876
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689
+groupChildBlockTypes: true
+handle: products
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Produkte
+topLevel: true

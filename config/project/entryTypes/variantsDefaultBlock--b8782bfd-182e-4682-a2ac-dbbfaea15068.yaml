@@ -1,0 +1,66 @@
+color: null
+fieldLayouts:
+  0402667c-ac69-4a2c-9e04-07feaf5feee1:
+    cardView:
+      - 'layoutElement:b34a2b20-a368-4af1-b7dc-d50a0cdcdc84'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 1418345b-c28c-40e9-9dc7-154ea0badb4a
+            handle: woodtype
+            instructions: null
+            label: Holzart
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04b6fc54-9df0-4f0f-841a-d0737b093f16
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 8d154cca-7687-4240-91fe-4530d52d7fd0
+            handle: null
+            instructions: null
+            label: Preis
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b34a2b20-a368-4af1-b7dc-d50a0cdcdc84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 5007155b-c7af-449c-b76e-4044401d750a
+            handle: null
+            instructions: null
+            label: Verfügbar
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5abb2189-507e-4e8b-b2a7-83088ff2e04c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f34e47ae-5da0-4604-925a-8215c707ca5d
+        userCondition: null
+    thumbFieldKey: 'layoutElement:04b6fc54-9df0-4f0f-841a-d0737b093f16'
+handle: variantsDefaultBlock
+hasTitleField: false
+icon: null
+name: 'Varianten Block 2'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

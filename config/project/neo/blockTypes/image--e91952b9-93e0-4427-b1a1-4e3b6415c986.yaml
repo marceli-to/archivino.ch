@@ -1,0 +1,210 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  6218f44e-01f7-40bf-8529-382dd1609a72:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 28d29cb9-c818-45e0-818d-d902c3b53c9a # Bild
+            instructions: 'Bild wird standardmässig in der Breite des Inhaltes angezeigt.'
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cbf697f2-c319-4553-90c6-465c64f218e9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 16be4ed9-c7c0-4b12-bdfd-fab6150dafdd
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 94a2d662-080c-49a6-94bb-eb353c6f62b2 # Position Punkt-Muster
+            instructions: 'Wenn kein Muster angezeigt wird, wird automatisch auch kein Kreis angezeigt.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa0da372-b611-4fea-ada8-fb174a544265
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 23a4f146-62bc-4be6-8249-25578a0c7f39 # Text vor Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5aeb4055-b76f-4bd7-9dc3-397354a0919c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Punkt-Muster
+        uid: 369b1920-a168-424d-be31-a4c897c4cfa6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Nur wichtig, wenn ein Kreis über dem Bild angezeigt werden soll.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 77fa2351-992a-4b83-8eac-ebfb75944c95
+            userCondition: null
+          -
+            elementCondition: null
+            heading: Inhalt
+            type: craft\fieldlayoutelements\Heading
+            uid: 1da05712-e637-4166-add5-77654d5ab0b4
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 8aaaef42-cec6-45d0-8b19-a6e91588f3ac # Kreis-Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e65616f9-55b0-4986-b921-24623f49eeea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec1019f8-d638-4398-b507-9754f69c79b3 # Kreis-Schriftgrösse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11e1d473-b37d-40e2-a633-aea791fccac4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 63edda70-6100-406c-9052-81d10608dd53 # Kreis-Schriftstil
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75415db4-ccc8-4624-940b-137b1385e6f0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 69a87f15-72c2-446c-a730-3eb979ac361e # Link
+            instructions: 'Falls Kreis verlinkt sein soll, hier Ziel auswählen.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 392665b8-843f-4050-889c-2dce49770eb4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Aussehen
+            type: craft\fieldlayoutelements\Heading
+            uid: 1d1c9857-5624-432b-84c5-0007381be9b2
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 00ddb8d1-abb5-498d-9585-a7e5df817c32 # Kreis-Farbe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52f34c50-4ca4-42ea-bc80-2369a25a689c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b49ab7f-91de-4bbb-ae0f-a0e29f47ffef # Kreis-Grösse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b376966-0718-40b0-99df-64ff98e021b1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cf28ecee-94db-46b2-ab54-4deaff3b7eaf # Kreis-Position
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 117354ae-00f6-4b1c-9b90-0f2272631747
+            userCondition: null
+            warning: null
+            width: 100
+        name: Kreis
+        uid: 5c051393-86ce-4c48-8ce8-af39ccc16891
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e5c29b20-b727-4470-b986-c1e8f0b72894 # Schatten
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0748bde2-9255-424a-8d47-a89816d85268
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 886f070a-cb44-450c-9a19-eb7233bcf001 # Text
+            instructions: '3-Zeilen Text (falls vorhanden)'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d639ecc-dc6b-46a0-a28c-80460d00e859
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: 9c692950-3633-4afa-b537-8a7b216d94a1
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: image
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Bild
+topLevel: true

@@ -1,0 +1,9 @@
+{% import '/macros/text-col.twig' as TextCol %}
+
+<section class="text-cols container-wrapper {{ block.marginTop ?? 'mt-45' }}">
+  <div class="container text-cols-container">
+    {% for textcol in block.textcols.all() %}
+      {{ TextCol.TextCol(textcol) }}
+    {% endfor %}
+  </div>
+</section>

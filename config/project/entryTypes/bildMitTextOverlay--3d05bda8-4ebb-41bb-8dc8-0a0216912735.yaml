@@ -1,0 +1,37 @@
+color: null
+fieldLayouts:
+  49e528da-a6ab-4654-850e-43c4e891d62c:
+    cardView:
+      - 'layoutElement:7faa6041-04f5-4b98-9928-5c621730afe3'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 6b9dd54d-c945-4b1b-8a59-f74fe7e827dc
+            handle: null
+            instructions: null
+            label: t
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7faa6041-04f5-4b98-9928-5c621730afe3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b59fddaa-cc77-4e52-b434-bc6802ccaa02
+        userCondition: null
+handle: bildMitTextOverlay
+hasTitleField: false
+icon: null
+name: 'Bild & Botschaft'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

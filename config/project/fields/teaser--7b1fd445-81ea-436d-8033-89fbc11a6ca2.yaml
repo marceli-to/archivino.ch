@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: text
+handle: teaser
+instructions: null
+name: Teaser
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 6e4fa1de-3908-4802-b235-44822643e0c2 # Simple 2
+  columnType: text
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

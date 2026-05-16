@@ -1,0 +1,118 @@
+fieldLayouts:
+  754db091-0a60-4b54-a8e6-415caf0b4878:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a1cd1071-3aeb-4191-8609-8dfc49f65243
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45ef0af1-1b38-4f7a-b765-fa76c6e1d51b # Header-Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc7c0e81-357b-4d2f-8608-b8410e198d98
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Inhalt
+            type: craft\fieldlayoutelements\Heading
+            uid: 1391e4e5-03b3-4a6b-be38-84203621d795
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 985723a8-c4a5-4502-b8fe-9e95c13fe8d4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2f037b78-8cef-4d23-b99e-83683c31dde6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1df30819-5074-43c0-ad63-c36e470d254b # Meta-Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 537f493f-8ef2-479e-be1f-e456e847e117
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29c1a5d4-669a-413c-9232-e1e4950ab0bc # Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 39894f95-6e93-405b-ad62-70eb6c2ba863
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9e91a70-6b6d-425d-a869-238d3c1d0608 # Suchmaschinen-Indexierung deaktivieren
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7acfe9ce-e499-48dd-9654-7971a9dd4897
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 5de7e693-1bb0-46f4-afb2-e48b7a7d6e9a
+        userCondition: null
+handle: widerrufsbelehrung
+hasTitleField: false
+name: Widerrufsbelehrung
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

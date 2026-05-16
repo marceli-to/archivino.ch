@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+handle: location
+instructions: 'Wählen Sie aus, wo diese Aktivität stattfindet. Neue Lokalitäten können unter "Kategorien" > "Lokalitäten" erfasst werden.'
+name: Lokalität
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Lokalität hinzufügen'
+  showSiteMenu: true
+  source: 'group:4cd7bb54-2611-4ca7-819c-7c24b95476f2'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

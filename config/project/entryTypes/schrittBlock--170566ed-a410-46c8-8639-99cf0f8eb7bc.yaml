@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  92e51bab-eadb-4b30-94f2-d0d9011bf447:
+    cardView:
+      - 'layoutElement:5b4e5ad2-4e61-478a-bdd7-d49265d7788d'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 2a15eb42-44d2-4ef2-8bd5-7cffd67283d1
+            handle: titel
+            instructions: null
+            label: Titel
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b4e5ad2-4e61-478a-bdd7-d49265d7788d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: fdfea637-9d9a-4e0d-8e75-3a6217c969d6
+            handle: text
+            instructions: null
+            label: Text
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ff2b045-2d30-4ef0-95d3-29fdf5c682ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a67cff2c-bbc0-453d-a998-c04ac40ae8d4
+        userCondition: null
+handle: schrittBlock
+hasTitleField: false
+icon: null
+name: 'Content-Blöcke - Ablauf - Schritt Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

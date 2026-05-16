@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: variantsMyarchivino
+instructions: null
+name: Varianten
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 71af65fe-db32-4cf5-852e-f0a7d0d69143 # Varianten Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,119 @@
+<!--
+
+product-wider (doppelte breite)
+
+-->
+
+
+{% macro Product(productObject) %}
+
+  {% import '/helpers/product-helper.twig' as productFormatter %}
+
+  {# do calcs specific to myarchivino products #}
+  {% if productObject.type == 'myarchivino' %}
+
+    {% set minBottles = 999999 %}
+    {% set maxBottles = 0 %}
+    {% set availableSizes = [] %}
+
+    {# probably useful for later #}
+    {# dump(max(woodtype.variantsTable|column('height'))) #}
+    {#    {% set availableSizes = availableSizes|merge(woodtype.variantsTable|column('height')) %}#}
+
+    {% for woodtype in productObject.variantsMyarchivino.all() %}
+
+      {% for variant in woodtype.variantsTable %}
+
+        {# only work with values if variant is available #}
+        {% if variant.available %}
+
+          {# calc min bottle capacity #}
+          {% if variant.volumen < minBottles %}
+            {% set minBottles = variant.volumen %}
+          {% endif %}
+
+          {# calc max bottle capacity #}
+          {% if variant.volumen > maxBottles %}
+            {% set maxBottles = variant.volumen %}
+          {% endif %}
+
+          {# extract unique size values and store in new array #}
+          {% if variant.height not in availableSizes %}
+            {% set availableSizes = availableSizes|merge([variant.height]) %}
+          {% endif %}
+
+        {% endif %}
+
+      {% endfor %}
+
+    {% endfor %}
+
+  {% else %}
+
+    {% set availableSizes = productObject.productHeight %}
+    {% set minBottles = productObject.volume %}
+    {% set maxBottles = false %}
+
+  {% endif %}
+
+  {% if productObject.productContainerWidth == 'product-wider' %}
+    {% set productContainerWidthClass = productObject.productContainerWidth %}
+    {% set productPictureTransform = 'productListItemWider' %}
+  {% else %}
+    {% set productPictureTransform = 'productListItem' %}
+  {% endif %}
+
+  <article class="product {{ productContainerWidthClass ?? '' }}">
+
+    {% if productObject.type != 'myarchivino' %}
+      <h3 class="product-title h2" >{{ productObject.title }}</h3>
+    {% endif %}
+
+    <div class="product-picture">
+
+      {% if productObject.type == 'myarchivino' %}
+        <span class="product-size">{{ productObject.sizeLabel }}</span>
+      {% endif %}
+
+      {% if productObject.productPictures|length %}
+        <img src="{{ productObject.productPictures.one().getUrl(productPictureTransform) }}" alt="{{ productObject.productPictures.one().title }}">
+      {% else %}
+        <img src="https://picsum.photos/400/550" alt="">
+      {% endif %}
+
+      <div class="product-overlay">
+        <a href="{{ productObject.getUrl() }}" title="">
+          Mehr<br>
+          Details<br>
+          <img src="/assets/icons/cart-white.svg" alt="Warenkorb">
+        </a>
+      </div>
+    </div>
+    <div class="product-facts">
+      <h4>Facts</h4>
+
+      {% if productObject.type == 'customized' %}
+
+      <p class="product-facts-list">Wird individuell angefertigt</p>
+
+      {% else %}
+
+      <ul class="product-facts-list">
+        <li class="product-fact">
+          <div class="product-fact-key">Breite</div>
+          <div class="product-fact-value">{{ productObject.productWidth }} cm</div>
+        </li>
+        <li class="product-fact">
+          <div class="product-fact-key">Höhe</div>
+          <div class="product-fact-value">
+            {{ productFormatter.formatProductHeight(availableSizes) }} cm</div>
+        </li>
+        <li class="product-fact">
+          <div class="product-fact-key">Volumen</div>
+          <div class="product-fact-value">{{ productFormatter.formatProductVolume(minBottles, maxBottles) }} Flaschen</div>
+        </li>
+      </ul>
+      {% endif %}
+    </div>
+  </article>
+{% endmacro %}

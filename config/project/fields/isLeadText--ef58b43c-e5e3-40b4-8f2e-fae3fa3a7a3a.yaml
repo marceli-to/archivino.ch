@@ -1,0 +1,13 @@
+columnSuffix: ozncfdiv
+contentColumnType: boolean
+handle: isLeadText
+instructions: null
+name: Lead-Text
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

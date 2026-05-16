@@ -1,0 +1,13 @@
+columnSuffix: ulomuwjw
+contentColumnType: boolean
+handle: orderable
+instructions: 'Soll dieses Produkt online bestellbar sein?'
+name: Bestellbar
+searchable: false
+settings:
+  default: true
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

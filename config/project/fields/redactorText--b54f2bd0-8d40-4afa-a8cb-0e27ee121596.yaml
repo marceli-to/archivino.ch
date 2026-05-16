@@ -1,0 +1,23 @@
+columnSuffix: cxchgdgo
+contentColumnType: text
+handle: redactorText
+instructions: null
+name: 'Redactor Text'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 5755d590-63f4-4378-a687-bd9a2e3a993d # Default
+  columnType: text
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

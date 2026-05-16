@@ -1,0 +1,58 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  737f84ea-eed4-4b2f-82e4-bdc8663b2483:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: bfd8adb6-3938-41d1-b348-a3aeaef22ddc # TextCols
+            instructions: null
+            label: Holzarten
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59036cb8-25dc-4d5f-a8aa-6e701dc559ec
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 52717171-b681-4cb0-94bb-c0fee7df53cd
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c408ceb1-dc31-4c1c-8453-dc2dc9841005
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: fac99ff1-f710-4d55-82b8-02ea33f70b52
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121
+groupChildBlockTypes: true
+handle: holzarten
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Holzarten
+topLevel: true

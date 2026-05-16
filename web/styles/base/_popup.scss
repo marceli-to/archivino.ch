@@ -1,0 +1,76 @@
+
+.popup-close{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  padding: 12px;
+
+
+  .close-icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    &::before,
+    &::after{
+      content: '';
+      background-color: #000;
+      height: 1px;
+      width: 100%;
+      display: block;
+      top: 12px;
+      position: absolute;
+    }
+
+    &::before{
+      transform-origin: center center;
+      transform: rotate(-45deg);
+    }
+    &::after{
+      transform-origin: center center;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.popup-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 95% 1fr;
+  grid-template-rows: minmax(2.5%, 1fr) auto minmax(2.5%, 1fr);
+  background-color: rgba($black, 0.2);
+  z-index: 100;
+
+  visibility: hidden;
+  opacity: 0;
+
+  @include for-tablet-landscape-up{
+    grid-template-columns: 1fr minmax(900px, 50%) 1fr;
+  }
+
+  @include animate(all);
+}
+.popup{
+  position: relative;
+  grid-area: 2 / 2;
+  display: grid;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  gap: 2rem;
+  padding: 2rem;
+
+  background-color: $white;
+  @include for-tablet-portrait-up{
+    grid-template-columns: 2fr 3fr;
+  }
+
+  @include for-tablet-landscape-up{
+    padding: 4rem 4rem 5rem 4rem;
+  }
+}

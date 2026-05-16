@@ -1,0 +1,45 @@
+columnSuffix: gidphvtz
+contentColumnType: string
+handle: positionPunktMusterHeader
+instructions: 'Position des Punktmusters im Bezug zum Bild.'
+name: 'Position Punkt-Muster'
+searchable: false
+settings:
+  columnType: string
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Links
+        -
+          - value
+          - dots-left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Rechts
+        -
+          - value
+          - dots-right
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Kein Muster'
+        -
+          - value
+          - no-dots
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

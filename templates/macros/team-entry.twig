@@ -1,0 +1,33 @@
+{% macro TeamEntry(personObject) %}
+  <article class="team-entry">
+    <div class="team-entry-image popup-trigger">
+      <picture>
+        <img src="{{ personObject.memberImage.one().getUrl('square') }}" alt="{{ personObject.memberImage.one().title }}">
+      </picture>
+      <div class="team-entry-overlay">
+      {{ personObject.position }}
+      </div>
+    </div>
+    <div class="team-entry-name">
+      {{ personObject.firstname ~ ' ' ~ personObject.lastname }}
+    </div>
+
+    <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup-close">
+          <span class="close-icon"></span>
+        </div>
+        <div class="team-image">
+          <img src="{{ personObject.memberImage.one().getUrl('square') }}" alt="{{ personObject.memberImage.one().title }}">
+          <div class="team-popup-circle circle circle-primary circle-regular">{{ personObject.position }}</div>
+        </div>
+        <div class="team-description">
+          <h3 class="h2">{{ personObject.firstname ~ ' ' ~ personObject.lastname }}</h3>
+          {{ personObject.redactorTextSimplePlus }}
+        </div>
+
+      </div>
+    </div>
+
+  </article>
+{% endmacro %}

@@ -1,0 +1,35 @@
+color: null
+fieldLayouts:
+  8bfafcd7-a70c-42b7-820e-2419ceddde7b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: bfbc6692-cb88-43cb-bcdd-57aee05ac2b1
+            handle: null
+            instructions: null
+            label: 'Zeilen-Typ mit...'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3293ad5-8420-48b1-97be-66a41bf2cb5e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d79eef75-f7e7-4f6b-b3d7-4bb38debff29
+        userCondition: null
+handle: vollbildzeileBlock
+hasTitleField: false
+icon: null
+name: 'Content-Blöcke - Vollbildzeile - Vollbildzeile Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

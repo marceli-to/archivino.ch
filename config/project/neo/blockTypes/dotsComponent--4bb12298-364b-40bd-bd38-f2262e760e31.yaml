@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  86136a2b-a61b-4b03-956d-f58f2995f30a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle wird ein Punkte-Muster angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 5726ef02-b22e-4bd8-a8cf-e3db88fa57b8
+            userCondition: null
+        name: Inhalt
+        uid: f554100d-7179-429a-8b3d-834bc0449152
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689
+groupChildBlockTypes: true
+handle: dotsComponent
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Punkte-Muster
+topLevel: true

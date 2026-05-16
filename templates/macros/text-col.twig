@@ -1,0 +1,28 @@
+
+{% macro TextCol(textColObject) %}
+{% import '/macros/link.twig' as LinkMacro %}
+  <article class="text-col">
+    <div class="text-col-content">
+      <h3>{{ textColObject.titel }}</h3>
+      {{ textColObject.text }}
+    </div>
+    <div class="text-col-image">
+
+        {% if textColObject.bildLink is empty != true %}
+          {{LinkMacro.linkOpenTag(textColObject.bildLink)}}
+        {% endif %}
+
+        {% if textColObject.bild|length %}
+            <picture class="shadow">
+                <img src="{{ textColObject.bild.one().getUrl('textCol') }}" alt="{{ textColObject.bild.one().title }}">
+            </picture>
+        {% else %}
+            <img src="https://picsum.photos/1040/510" alt="">
+        {% endif %}
+
+        {% if textColObject.bildLink is empty != true %}
+          </a>
+        {% endif %}
+    </div>
+  </article>
+{% endmacro %}

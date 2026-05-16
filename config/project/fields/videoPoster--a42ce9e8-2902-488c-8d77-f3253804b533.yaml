@@ -1,0 +1,36 @@
+columnSuffix: null
+contentColumnType: string
+handle: videoPoster
+instructions: 'Bild, welches angezeigt wird, bis das Video startet.'
+name: Video-Poster
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  defaultUploadLocationSubpath: poster
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  restrictedLocationSubpath: poster
+  selectionLabel: 'Poster-Bild hinzufügen'
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

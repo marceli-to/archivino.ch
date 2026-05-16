@@ -1,0 +1,26 @@
+{# subject: Mitteilung via Kontaktformular #}
+{# fromEmail: {{ craft.app.projectConfig.get('email.fromEmail') }} #}
+{# fromName: {{ craft.app.projectConfig.get('email.fromName') }} #}
+{# replyToName: {{ vorname }} {{ name }} #}
+{# replyToEmail: {{ email }} #}
+{# cc:  #}
+{# bcc: info@nexocom.ch #}
+{# includeAttachments: true #}
+{# presetAssets:  #}
+{# pdfTemplates:  #}
+{# templateName: Template Admin-Benachrichtigung #}
+{# description: Admin-Benachrichtigung #}
+
+<p>Nachricht vom: {{ dateCreated|date('d.m.Y \\u\\m H:i:s \\U\\h\\r') }}</p>
+Details:<br />
+********<br />
+{% for field in allFields %}
+    {% if field.handle != 'message' %}
+    {{ field.label }}: {{ field.valueAsString }}<br />
+    {% endif %}
+{% endfor %}
+<br />Nachricht:<br />
+***********<br />
+{{ message|nl2br }}
+
+

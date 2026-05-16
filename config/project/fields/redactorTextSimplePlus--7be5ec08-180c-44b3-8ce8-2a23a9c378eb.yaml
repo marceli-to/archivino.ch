@@ -1,0 +1,23 @@
+columnSuffix: kgahatwt
+contentColumnType: text
+handle: redactorTextSimplePlus
+instructions: null
+name: 'Redactor Text SimplePlus'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 179df028-0f57-4503-b953-4ef246360565 # Simple Plus
+  columnType: text
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

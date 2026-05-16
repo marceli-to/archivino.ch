@@ -1,0 +1,18 @@
+columnSuffix: null
+contentColumnType: string
+handle: autor
+instructions: 'Bei internem Autor (Mitglied) bitte rechts bei den Beitrags-Einstellungen das Mitglied auswählen.'
+name: 'Externer Autor'
+searchable: false
+settings:
+  entryTypes:
+    -
+      uid: 2427196e-3640-41b8-88fa-f50ba5047337 # Externer Autor
+  maxEntries: 1
+  minEntries: 0
+  propagationKeyFormat: null
+  propagationMethod: all
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

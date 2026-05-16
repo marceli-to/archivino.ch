@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: text4
+instructions: optional
+name: 'Content-Blöcke - Vollbildzeile - Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: Optional
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

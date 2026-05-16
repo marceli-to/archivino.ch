@@ -1,0 +1,52 @@
+color: null
+fieldLayouts:
+  c99ff429-d7e2-4053-bab3-f5e7aa615419:
+    cardView:
+      - 'layoutElement:d630e666-25f5-4c27-8889-f2ef8c15b32c'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 085e2d53-fb75-46fc-b3c8-c42267dd9aa8
+            handle: null
+            instructions: null
+            label: Button-Text
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d630e666-25f5-4c27-8889-f2ef8c15b32c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 3ae4f5c6-cf0d-4193-a762-d44763358b77
+            handle: null
+            instructions: null
+            label: Button-Ziel
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41d38048-9f2f-4bd6-acce-e041d9750ce4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0a8b1c59-0865-4011-be38-aca7b05248bf
+        userCondition: null
+    thumbFieldKey: 'layoutElement:41d38048-9f2f-4bd6-acce-e041d9750ce4'
+handle: button
+hasTitleField: false
+icon: null
+name: Button
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

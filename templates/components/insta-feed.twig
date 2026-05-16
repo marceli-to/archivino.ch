@@ -1,0 +1,31 @@
+{% import '/macros/gallery-item.twig' as GalleryItem %}
+
+{% set craftagram = craft.craftagram.getInstagramFeed(9) %}
+
+<section class="gallery container-wrapper mt-45">
+  <div class="container">
+    <h2 class="title">Instagram</h2>
+  </div>
+  {% if craftagram|length %}
+    <div class="container gallery-container gallery--square">
+
+      {% for item in craftagram.data %}
+
+        <figure class="gallery-item">
+
+          <picture>
+            <a href="{{ item.permalink }}" target="_blank" referrerpolicy="no-referrer">
+              <img src="{{ item.media_type == 'VIDEO' ? item.thumbnail_url : item.media_url }}"/>
+            </a>
+          </picture>
+
+        </figure>
+
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="container">
+      <p>Aktuell können keine Inhalte angezeigt werden.</p>
+    </div>
+  {% endif %}
+</section>

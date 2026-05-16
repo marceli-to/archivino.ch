@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: responsiveHeaderTablet
+height: 350
+interlace: none
+mode: crop
+name: 'Header Tablet'
+position: center-center
+quality: null
+upscale: true
+width: 700

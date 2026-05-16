@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  e70933da-17fe-4c25-ba33-cefeff51341e:
+    cardView:
+      - 'layoutElement:48fe54ff-1a9b-4bec-a6ba-9b9dfda642c3'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: f3c02f46-7585-4f62-85fc-0c26355e8b23 # Text
+            handle: titel
+            instructions: null
+            label: Titel
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48fe54ff-1a9b-4bec-a6ba-9b9dfda642c3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: c6d78aa9-d18d-40db-8326-e893ca375954
+            handle: text
+            instructions: null
+            label: Text
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04c0f95b-a45f-4266-8c9c-0e9decffe45d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 1b000b36-4a9c-4e68-85f5-bb53a9c8fa00
+            handle: bild
+            instructions: null
+            label: Bild
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9dd9b00d-0f1c-4846-9265-f839dda4252d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 18b8d1b0-c56c-4996-b0dd-b43151b8216a # TextCols - Bild-Link
+            handle: null
+            instructions: null
+            label: Bild-Link
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 93736cd1-a7e7-4b84-b48c-9c7e9199d9c0
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 68289444-a572-46eb-9d97-66cf219db724
+        userCondition: null
+    thumbFieldKey: 'layoutElement:9dd9b00d-0f1c-4846-9265-f839dda4252d'
+handle: textcolsBlock
+hasTitleField: false
+icon: null
+name: 'TextCols Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

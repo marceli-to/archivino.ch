@@ -1,0 +1,111 @@
+description: null
+handle: editor
+name: Editor
+permissions:
+  - accesscp
+  - accessplugin-calendar
+  - accessplugin-navigation
+  - calendar-manageevents
+  - 'calendar-manageeventsfor:079b8f03-dfe2-48b8-aa9e-d18cb65760c5'
+  - 'calendar-manageeventsfor:all'
+  - 'createentries:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'createentries:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'createentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'createentries:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'createfolders:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deleteassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deleteentries:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'deleteentries:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'deleteentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'deleteentries:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'deletepeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'deletepeerentries:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'deletepeerentries:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'deletepeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'deletepeerentries:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'deletepeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'deletepeerentrydrafts:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'deletepeerentrydrafts:2e17648f-09e8-4b43-88a1-92b246925e4d'
+  - 'deletepeerentrydrafts:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9'
+  - 'deletepeerentrydrafts:4110572d-1edb-4476-848c-56fc9445567e'
+  - 'deletepeerentrydrafts:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'deletepeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'deletepeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'deletepeerentrydrafts:acea00b9-5da4-42e0-bf6d-51660c181f40'
+  - 'deletepeerentrydrafts:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'deletepeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'deletepeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'deletepeerentrydrafts:f3ba98eb-c9b1-4d4e-937c-65260a0ca889'
+  - 'editcategories:4cd7bb54-2611-4ca7-819c-7c24b95476f2'
+  - 'editcategories:af6cb2c5-7d46-494b-b7c3-cfc1cea57b3e'
+  - 'editentries:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'editentries:2e17648f-09e8-4b43-88a1-92b246925e4d'
+  - 'editentries:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9'
+  - 'editentries:4110572d-1edb-4476-848c-56fc9445567e'
+  - 'editentries:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'editentries:acea00b9-5da4-42e0-bf6d-51660c181f40'
+  - 'editentries:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'editentries:f3ba98eb-c9b1-4d4e-937c-65260a0ca889'
+  - 'editglobalset:13dab699-ff85-46be-aeca-ccf3161c7a2e' # Einstellungen
+  - 'editglobalset:8a3c23f8-0bc3-4c8c-bfc5-7c2e2f5f4c19' # Allgemein
+  - 'editimages:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'editpeerentries:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'editpeerentries:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'editpeerentries:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'editpeerentrydrafts:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'editpeerentrydrafts:2e17648f-09e8-4b43-88a1-92b246925e4d'
+  - 'editpeerentrydrafts:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9'
+  - 'editpeerentrydrafts:4110572d-1edb-4476-848c-56fc9445567e'
+  - 'editpeerentrydrafts:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'editpeerentrydrafts:acea00b9-5da4-42e0-bf6d-51660c181f40'
+  - 'editpeerentrydrafts:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'editpeerentrydrafts:f3ba98eb-c9b1-4d4e-937c-65260a0ca889'
+  - 'editpeerimages:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'publishentries:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'publishentries:2e17648f-09e8-4b43-88a1-92b246925e4d'
+  - 'publishentries:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9'
+  - 'publishentries:4110572d-1edb-4476-848c-56fc9445567e'
+  - 'publishentries:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'publishentries:acea00b9-5da4-42e0-bf6d-51660c181f40'
+  - 'publishentries:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'publishentries:f3ba98eb-c9b1-4d4e-937c-65260a0ca889'
+  - 'publishpeerentries:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'publishpeerentries:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'publishpeerentries:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'publishpeerentrydrafts:2624cec9-061d-4431-9b04-f1b41ee88215'
+  - 'publishpeerentrydrafts:2e17648f-09e8-4b43-88a1-92b246925e4d'
+  - 'publishpeerentrydrafts:3928f513-4b1e-4af8-ace9-3bbe20b0c4e9'
+  - 'publishpeerentrydrafts:4110572d-1edb-4476-848c-56fc9445567e'
+  - 'publishpeerentrydrafts:4554c04a-40cb-459e-8db6-4f02dea5613c'
+  - 'publishpeerentrydrafts:acea00b9-5da4-42e0-bf6d-51660c181f40'
+  - 'publishpeerentrydrafts:ad4fec4e-bcc8-46fa-88da-93835e93338a'
+  - 'publishpeerentrydrafts:f3ba98eb-c9b1-4d4e-937c-65260a0ca889'
+  - 'replacefiles:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'replacepeerfiles:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'saveassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'saveentries:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'saveentries:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'saveentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'saveentries:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'saveentries:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'savepeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'savepeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'savepeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'savepeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'savepeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'savepeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'savepeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'viewassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'viewentries:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'viewentries:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'viewentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'viewentries:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'viewentries:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'viewpeerassets:ed7cb5c2-d98c-48fb-b033-83aecf9c869b' # Object-Storage
+  - 'viewpeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'viewpeerentrydrafts:1552cba9-27ff-4916-a33d-83229caf41a2' # Impressum
+  - 'viewpeerentrydrafts:6d064992-c34b-4ef0-9b87-cb1b661bf7df' # Datenschutz
+  - 'viewpeerentrydrafts:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung
+  - 'viewpeerentrydrafts:d264285e-fbff-447b-8a82-d6ff1f72bc49' # Kontakt
+  - 'viewpeerentrydrafts:d68fa7b1-f9da-4f43-b474-be220edc9de3' # Home
+  - 'changeauthorforpeerentries:8689207e-cb7d-4f48-bce2-3efbab308dc1' # Team-Verwaltung

@@ -1,0 +1,25 @@
+columnSuffix: wzlgbmbi
+handle: vorteile
+instructions: null
+name: Vorteile
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 2f6857ca-a74c-45b1-98c1-f4a829d0d53f # Vorteile Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

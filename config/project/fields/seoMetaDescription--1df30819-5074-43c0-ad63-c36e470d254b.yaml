@@ -1,0 +1,18 @@
+columnSuffix: gnnfkqen
+contentColumnType: string(1000)
+handle: seoMetaDescription
+instructions: "Die optimale Länge der Meta-Description liegt bei 140 bis 155 Zeichen. Dieses Feld ist daher auf maximal 250 Zeichen beschränkt.\r\nWenn das Feld leer gelassen wird, wird die Meta-Description aus den Bereich \"Globale Inhalte\" ausgegeben. "
+name: Meta-Description
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 250
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

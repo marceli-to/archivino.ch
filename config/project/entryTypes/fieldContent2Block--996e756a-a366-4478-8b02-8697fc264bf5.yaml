@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  419be164-b73e-4bd9-9f25-e554b4b95cdc:
+    cardView:
+      - 'layoutElement:a26d3a1e-ad76-4cf1-82fa-4df6c95263f1'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 53901f4e-380f-4962-869a-23d2b544c4ce
+            handle: icone1
+            instructions: null
+            label: Icon
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1acecb34-f7a1-43e5-abbc-c9ec64430c75
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 3796b916-fc68-4dfb-9901-757a7e664285
+            handle: text1
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a26d3a1e-ad76-4cf1-82fa-4df6c95263f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: dbe24034-a1bd-4b43-9617-6a907ba998de
+            handle: null
+            instructions: null
+            label: Icon
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0fdcf218-321c-4227-83f5-6efa0db078ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 96a3bbcc-15e4-47ac-8f69-9d109aff3ffe
+            handle: text2
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 37e18851-1985-41b2-9ee1-60612f753a47
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 03813334-677d-4888-bab3-a234e8a661d1
+        userCondition: null
+    thumbFieldKey: 'layoutElement:1acecb34-f7a1-43e5-abbc-c9ec64430c75'
+handle: fieldContent2Block
+hasTitleField: false
+icon: null
+name: 'Inhalt - Icon-Text-Icon-Text - Icon-Text-Icon-Text Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,7 @@
+{% import '/macros/image.twig' as Image %}
+
+<section class="block-image {{ block.marginTop ?? 'mt-45' }}">
+  {% if block.image|length %}
+    {{ Image.Image(block) }}
+  {% endif %}
+</section>

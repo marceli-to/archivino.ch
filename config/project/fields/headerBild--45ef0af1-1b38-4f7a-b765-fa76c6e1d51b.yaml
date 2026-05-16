@@ -1,0 +1,18 @@
+columnSuffix: null
+contentColumnType: string
+handle: headerBild
+instructions: null
+name: Header-Bild
+searchable: false
+settings:
+  maxBlocks: 1
+  maxLevels: 1
+  maxTopBlocks: 1
+  minBlocks: 1
+  minLevels: null
+  minTopBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: benf\neo\Field

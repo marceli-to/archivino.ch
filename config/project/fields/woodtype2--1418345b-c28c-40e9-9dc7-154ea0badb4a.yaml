@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: woodtype2
+instructions: null
+name: 'Varianten - Holzart 2'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: 1
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Holzart auswählen'
+  showCardsInGrid: false
+  showSiteMenu: true
+  source: 'group:ab863891-928b-4eea-a1a2-dcdc008bdfab' # Holzarten
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

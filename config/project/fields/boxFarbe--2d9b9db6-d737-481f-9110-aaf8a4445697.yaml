@@ -1,0 +1,66 @@
+columnSuffix: null
+handle: boxFarbe
+instructions: null
+name: 'Content-Blöcke - Content-Box - Box-Farbe'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Standard hell'
+        -
+          - value
+          - standardHell
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Standard dunkel'
+        -
+          - value
+          - standardDunkel
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Trauung
+        -
+          - value
+          - trauung
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Taufe
+        -
+          - value
+          - taufe
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Abschied
+        -
+          - value
+          - abschied
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

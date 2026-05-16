@@ -1,0 +1,44 @@
+fieldLayouts:
+  10ccc36e-4f97-44d0-94e2-90ff658af08c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Sollten die SEO-Angaben auf einer Seite fehlen, werden automatisch diese Werte als Standard ausgegeben.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 585670d2-6eed-48af-a95c-917beaf29c87
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 1df30819-5074-43c0-ad63-c36e470d254b # Meta-Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2064c56a-003b-4b33-9c87-ab0f1e1a5a66
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29c1a5d4-669a-413c-9232-e1e4950ab0bc # Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 719cf12b-ff57-4612-aa9d-c2ca578a4bdc
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 4572a5d7-865d-48db-ae3b-5a62a7d39bb7
+        userCondition: null
+handle: seo
+name: SEO
+sortOrder: 4

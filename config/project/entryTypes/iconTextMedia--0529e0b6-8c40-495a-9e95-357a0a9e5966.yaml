@@ -1,0 +1,35 @@
+color: null
+fieldLayouts:
+  ffa4c564-8a92-437c-9b87-d70b0de9ca62:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 8f69a335-9be8-46e9-b913-d7c0979e20c9 # Inhalt - Icon-Text-Bild - Icon-Text-Bild
+            handle: null
+            instructions: null
+            label: Icon-Text-Bild
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b74f8f7-bc32-4371-9511-2f655904cce2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f60e4c8c-bd46-44e5-a551-08fabdc777a7
+        userCondition: null
+handle: iconTextMedia
+hasTitleField: false
+icon: null
+name: Icon-Text-Bild
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

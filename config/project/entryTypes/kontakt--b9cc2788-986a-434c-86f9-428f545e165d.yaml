@@ -1,0 +1,132 @@
+fieldLayouts:
+  4c280c4a-fdca-4ced-a5aa-d1a01dcee32a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: dd5bdcdf-6dea-4f90-9d1c-569bb8bcda21
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: be045fdf-3956-4b5f-971f-250ad522c821 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a0067464-4d7e-4011-84ee-b76d26846ea0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 45ef0af1-1b38-4f7a-b765-fa76c6e1d51b # Header-Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2aed60d1-2824-4cdf-84e6-ac29b18b83a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7be5ec08-180c-44b3-8ce8-2a23a9c378eb # Redactor Text SimplePlus
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74ded4bb-eca7-429c-bbab-0903ea1f2188
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Die Adresse wird anhand der Daten aus dem Bereich "Globale Inhalte" angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 3b690b69-8dbf-451d-ae90-3210382b4e30
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49daf66a-b098-492e-85ad-4206d0c58fb7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: dd99620a-5bd7-4cd3-97db-04d190a1e495
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1df30819-5074-43c0-ad63-c36e470d254b # Meta-Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9219a27-3811-4242-9cfd-42f510fee579
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 29c1a5d4-669a-413c-9232-e1e4950ab0bc # Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 488cc2de-471a-4087-8fa1-21d9447759b0
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 46cab34b-c0bd-465d-b5ff-e0d10a548e2c
+        userCondition: null
+handle: kontakt
+hasTitleField: false
+name: Kontakt
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

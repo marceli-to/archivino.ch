@@ -1,0 +1,52 @@
+<!--
+  bg-primary, bg-black
+
+  text-only, text-image
+-->
+
+{% set contentBlock = block.blockWithIcons.one() %}
+
+<section class="text-with-icons container-wrapper bg-{{ block.color }} {{ contentBlock.type == 'iconTextMedia' ? 'text-image' : 'text-only' }} mt-45">
+  <div class="container text-with-icons-container">
+    <h2 class="text-with-icons__title">{{ block.titel }}</h2>
+
+      <article class="text-with-icons__article">
+        <div class="text-with-icons__icon">
+          <img src="{{ contentBlock.fieldContent.one().icone1.one().getUrl() }}" alt="{{ contentBlock.fieldContent.one().icone1.one().title }}">
+        </div>
+        <div class="text-with-icons__text">
+          <h3 style="display: none">Sub Title</h3>
+          {{ contentBlock.fieldContent.one().text1 }}
+        </div>
+      </article>
+
+    {% if(contentBlock.type == 'iconTextIconText') %}
+
+      <article class="text-with-icons__article">
+        <div class="text-with-icons__icon">
+          <img src="{{ contentBlock.fieldContent.one().icone2.one().getUrl() }}" alt="{{ contentBlock.fieldContent.one().icone2.one().title }}">
+        </div>
+        <div class="text-with-icons__text">
+          <h3 style="display: none">Sub Title</h3>
+          {{ contentBlock.fieldContent.one().text2 }}
+        </div>
+      </article>
+
+    {% endif %}
+
+    {% if(contentBlock.type == 'iconTextMedia') %}
+      <article class="text-with-icons__image">
+        {% if contentBlock.fieldContent.one().media.one().kind == 'image' %}
+          <picture>
+            <img src="{{ contentBlock.fieldContent.one().media.one().getUrl() }}" alt="{{ contentBlock.fieldContent.one().media.one().title }}">
+          </picture>
+        {% elseif contentBlock.fieldContent.one().media.one().kind == 'video' %}
+          <!--
+          TODO
+          VIDEO PLAYER
+          -->
+        {% endif %}
+      </article>
+    {% endif %}
+  </div>
+</section>

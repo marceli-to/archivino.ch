@@ -1,0 +1,28 @@
+[
+{% if entry.type == 'myarchivino' %}
+    {% for woodtype in entry.variantsMyarchivino.all() %}
+        {% for variant in woodtype.variantsTable %}
+            {% if variant.available %}
+                {% set variantId = (woodtype.woodtype.one().title ~ '-' ~ variant.beschreibung ~ '-' ~ variant.volumen)|lower|kebab %}
+                {
+                "id": "{{ entry.title|lower|kebab }}-{{ variantId }}",
+                "price": {{ variant.preis|number_format(2, '.', "'") }},
+                "url": "{{ craft.app.request.getAbsoluteUrl() }}"
+                },
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% else %}
+    {% for woodtypeVariant in entry.variantsDefault.all() %}
+        {% if woodtypeVariant.available %}
+            {% set variantId = (woodtypeVariant.woodtype.one().title)|lower|kebab %}
+            {% set variantName = woodtypeVariant.woodtype.one().title %}
+            {
+            "id": "{{ entry.title|lower|kebab }}-{{ variantId }}",
+            "price": {{ woodtypeVariant.price|number_format(2, '.', "'") }},
+            "url": "{{ craft.app.request.getAbsoluteUrl() }}"
+            },
+        {% endif %}
+    {% endfor %}
+{% endif %}
+]

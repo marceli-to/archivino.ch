@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  0de12df9-e609-41b8-8e6e-52c5f16024e8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9cdc37f9-2156-4052-8a60-9c9e22097549 # Bildergalerie
+            instructions: 'Um den Inhalt der beiden Text-Zeilen unterhalb der Bilder zu setzen, bitte jeweiliges Bild doppelklicken und die beiden Felder ausfüllen.'
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3f71ec0-c7e9-4819-b5aa-f30b7edf2a1c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d43dcbf7-cb49-4aae-8978-e986389d2433
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121
+groupChildBlockTypes: true
+handle: gallery
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Bildergalerie
+topLevel: true

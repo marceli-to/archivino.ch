@@ -1,0 +1,24 @@
+{# internal formatters #}
+{% macro formatProductHeight(productHeight) %}
+
+    {% if productHeight is iterable %}
+
+        {%- for height in productHeight|sort -%}
+            {{ height }}{{ loop.last ? '' : '/' }}
+        {%- endfor %}
+
+    {% else %}
+        {{ productHeight }}
+    {% endif %}
+
+{% endmacro %}
+
+{% macro formatProductVolume(minBottles, maxBottles = false) %}
+
+    {% if maxBottles != false %}
+        {{ minBottles }} bis {{ maxBottles }}
+    {% else %}
+        {{ minBottles }}
+    {% endif %}
+
+{% endmacro %}

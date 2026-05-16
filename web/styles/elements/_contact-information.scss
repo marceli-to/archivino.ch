@@ -1,0 +1,16 @@
+.contact-information{
+  display: flex;
+  flex-direction: column;
+}
+.contact-company{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  @include for-tablet-landscape-up{
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,106 @@
+fieldLayouts:
+  765592ca-f9d0-4132-89c6-fa03970b8cde:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ef9b22c5-be8b-4f32-b23a-bce32be8109a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07d8e39d-c7ad-412f-a60e-886ee471ddfd # Portrait
+            instructions: 'Bild wird quadratisch ausgegeben.'
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 760a42ad-ce24-4b34-ba90-bcc5ed93de65
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d02ff229-035c-48bb-aa78-79c2723d637d # Vorname
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1a9dc5b-b326-4715-a9c0-aa0719e3debe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4a380658-f9c6-4e21-a226-e27a997107f0 # Nachname
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0490694a-e5ca-403e-b9ac-49b0cb9cc3e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5416f4aa-5c8c-4730-a6d2-1dc6f15b764f # Funktion
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efb7d337-4285-44ac-8d3a-6950af3dd690
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7be5ec08-180c-44b3-8ce8-2a23a9c378eb # Redactor Text SimplePlus
+            instructions: null
+            label: 'Zur Person'
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0173030a-7dda-4997-98fb-d98d4566e4ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 9b1fb5a4-c398-4011-9486-9197a80071ad
+        userCondition: null
+handle: default
+hasTitleField: false
+name: Standard
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{firstname} {lastname}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

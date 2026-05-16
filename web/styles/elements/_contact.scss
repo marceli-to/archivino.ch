@@ -1,0 +1,10 @@
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 300px;
+  gap: 2rem;
+  @include for-tablet-landscape-up{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}

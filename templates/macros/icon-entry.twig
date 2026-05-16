@@ -1,0 +1,23 @@
+{% macro IconEntry(iconObject) %}
+  <article class="icon">
+    <figure class="popup-trigger">
+      <img src="{{ iconObject.src }}" alt="Architekten / Planer">
+      <figcaption>{{ iconObject.title }}</figcaption>
+    </figure>
+    <!-- ToDo: IF CONDITION
+      <a href="/loesungen-architekten-planer" class="blocklink"></a>
+      --->
+
+    <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup-close">
+          <span class="close-icon"></span>
+        </div>
+        <div class="description">
+          <h3 class="h2">{{ iconObject.title }}</h3>
+          {{ iconObject.text }}
+        </div>
+      </div>
+    </div>
+  </article>
+{% endmacro %}

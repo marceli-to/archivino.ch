@@ -1,0 +1,54 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  3fcc23f4-7b0e-42f1-94d4-39048b6c4864:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle werden die Team-Mitglieder angezeigt.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 41a88918-ab8b-47ce-9d5d-101c14bf2b9c
+            userCondition: null
+        name: Inhalt
+        uid: 9cdd4806-044b-4de2-959e-e0e7b59b85f2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8025309e-1527-4fcf-a58a-bdb051215069 # Abstand nach oben
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b80b6bf-a0a1-4455-b1e8-aee71096c79e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Erweitert
+        uid: aef652e9-9637-4717-9d04-b48c70667244
+        userCondition: null
+group: 7efffe68-08da-4be7-84cb-405497b61121
+groupChildBlockTypes: true
+handle: team
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Team
+topLevel: true

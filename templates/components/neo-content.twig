@@ -1,0 +1,76 @@
+{% for block in entry.contentBlocksNeo.level(1).all() %}
+    {% set componentType = block.type.handle %}
+    {% set anchorSelector = block.titel is defined and block.titel != '' ? block.titel|kebab : "abschnitt-" ~ block.id %}
+
+    {% if componentType == 'text' %}
+        {% include "/components/text.twig" %}
+
+    {% elseif componentType in ['textCols', 'holzarten', 'partner'] %}
+        {% include "/components/text-cols.twig" %}
+
+    {% elseif componentType == 'team' %}
+        {% include "/components/team.twig" %}
+
+    {% elseif componentType == 'testimonials' %}
+        {% include "/components/testimonials.twig" %}
+
+    {% elseif componentType == 'image' %}
+        {% include "/components/block-image.twig" %}
+
+    {% elseif componentType == 'contact' %}
+        {% include "/components/contact.twig" %}
+
+    {% elseif componentType == 'contactForm' %}
+        {% include "/components/contact-form.twig" %}
+
+    {% elseif componentType == 'gallery' %}
+        {% include "/components/gallery.twig" %}
+
+    {% elseif componentType == 'instagramFeed' %}
+        {% include "/components/insta-feed.twig" %}
+
+    {# ### Site specific content ### #}
+
+    {% elseif componentType == 'blockWithIcons' %}
+        {% include "/components/text-with-icons.twig" %}
+
+    {% elseif componentType == 'iconLinksForCustomerTypes' %}
+        {% include "/components/icon-links-for-customer-types.twig" %}
+
+    {% elseif componentType == 'products' %}
+        {% include '/components/product-list.twig' %}
+
+    {% elseif componentType == 'productItem' %}
+        {% include '/components/product-item.twig' %}
+
+    {% elseif componentType == 'dotsComponent' %}
+        {% include '/components/dots-component.twig' %}
+
+    {% endif %}
+    {# elseif componentType == 'downloads' #}
+        {# include "/components/downloads.twig" #}
+
+    {# elseif componentType == 'recentArticles' #}
+        {# include "/components/recent-articles.twig" #}
+
+    {# elseif componentType == 'articles' #}
+        {# include "/components/articles.twig" #}
+
+
+
+    {# elseif componentType == 'accordion' #}
+        {# include "/components/accordions.twig" #}
+
+    {# elseif componentType == 'gallery' #}
+        {# include "/components/gallery.twig" #}
+
+    {# elseif componentType == 'activities' #}
+        {# include "/components/activities.twig" #}
+
+    {# elseif componentType == 'reviews' #}
+        {# include "/components/reviews.twig" #}
+
+
+
+
+{% endfor %}

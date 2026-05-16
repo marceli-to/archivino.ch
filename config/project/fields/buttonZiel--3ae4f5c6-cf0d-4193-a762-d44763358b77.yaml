@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: buttonZiel
+instructions: null
+name: 'Content-Blöcke - Button - Button-Ziel'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: 'Button-Ziel auswählen'
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

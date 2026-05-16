@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: vollbildzeile
+instructions: null
+name: 'Content-Blöcke - Vollbildzeile - Vollbildzeile'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - eaa9cfbc-9d14-443e-be15-43d831d281b0 # Content-Blöcke - Vollbildzeile - Vollbildzeile Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

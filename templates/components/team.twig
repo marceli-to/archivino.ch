@@ -1,0 +1,9 @@
+{% import '/macros/team-entry.twig' as TeamEntry %}
+
+<section class="team container-wrapper mt-22">
+  <div class="container team-container">
+      {% for teamMember in craft.entries.section('team').all() %}
+        {{ TeamEntry.TeamEntry(teamMember) }}
+      {% endfor %}
+  </div>
+</section>

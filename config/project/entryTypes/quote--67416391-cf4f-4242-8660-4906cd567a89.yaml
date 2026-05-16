@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  602a7683-f1ed-41d1-b376-c1a97d2ef5e9:
+    cardView:
+      - 'layoutElement:d275f084-0059-4cfd-82fd-45033b7ca74c'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: daf27686-f50f-442f-b5a6-1669b5259c0e
+            handle: text
+            instructions: null
+            label: Text
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d275f084-0059-4cfd-82fd-45033b7ca74c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-06T20:32:05+00:00'
+            elementCondition: null
+            fieldUid: 40f09193-87cb-4bd1-9930-76c625d38f47
+            handle: quelleAuthor
+            instructions: null
+            label: 'Quelle / Author'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b81e997-44ad-41e9-a770-6e7420a8ba47
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ae775cce-a9c1-4583-bf8f-aafc249cbd4e
+        userCondition: null
+handle: quote
+hasTitleField: false
+icon: null
+name: Zitat
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

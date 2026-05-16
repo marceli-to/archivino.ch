@@ -1,0 +1,70 @@
+fieldLayouts:
+  e5da81ec-27e3-46a9-a7b3-ce06f00176aa:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: Quelle/Autor
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ab351576-649a-454f-b1b6-a50f450f0a33
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: be15fb58-c7e4-4a3f-8fff-4f35adb2e37b # Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7236767b-3517-4ce0-8df8-9b327b14d1a0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7be5ec08-180c-44b3-8ce8-2a23a9c378eb # Redactor Text SimplePlus
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f766beec-d2bf-4a1c-8376-a79a19006a71
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 8e03520b-7b38-4204-a651-655162acdffe
+        userCondition: null
+handle: testimonialVerwaltung_default
+hasTitleField: true
+name: Standard
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

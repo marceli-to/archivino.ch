@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: headerHome
+height: 740
+interlace: none
+mode: crop
+name: 'Header Home'
+position: center-center
+quality: 100
+upscale: true
+width: 1920

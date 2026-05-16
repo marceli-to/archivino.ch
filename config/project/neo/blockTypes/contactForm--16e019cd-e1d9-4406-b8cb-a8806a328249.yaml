@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: b295ea57-abae-4faa-be54-1c7e86956ceb # Inhalt
+fieldLayouts:
+  ae8bb0a0-430c-4ee8-bf76-a1adc9422170:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'An dieser Stelle wird ein Kontaktformular eingeblendet.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 88c8ed61-9133-458b-b41e-06fdbd9b5886
+            userCondition: null
+        name: Inhalt
+        uid: fa8be013-2b7a-435b-af44-f0caeb27e8f1
+        userCondition: null
+group: 055928d7-a692-4a58-8d1a-fad0f4605689
+groupChildBlockTypes: true
+handle: contactForm
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Kontaktformular
+topLevel: true

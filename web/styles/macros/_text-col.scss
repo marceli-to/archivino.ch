@@ -1,0 +1,19 @@
+.text-col{
+  display: flex;
+  flex-direction: column;
+}
+.text-col-image{
+  padding-top: 2rem;
+  margin-top: auto;
+  picture{
+    display: block;
+  }
+
+  a{
+    display: block;
+    @include animate(all);
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}

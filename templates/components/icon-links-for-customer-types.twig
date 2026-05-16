@@ -1,0 +1,29 @@
+{% import '/macros/icon-entry.twig' as IconEntry %}
+
+<section class="icons mt-45 container-wrapper">
+  <div class="container icons-container">
+    {% for popup in block.popups.all() %}
+      {% if popup.image|length %}
+      {{ IconEntry.IconEntry({ src: popup.image.one().getUrl(), title: popup.titel, text: popup.popupContent}) }}
+      {% endif %}
+    {% endfor %}
+
+    <!--
+    <figure class="icon">
+      <img src="/assets/architekt.svg" alt="Architekten / Planer">
+      <figcaption>Architekten / Planer</figcaption>
+      <a href="/loesungen-architekten-planer" class="blocklink"></a>
+    </figure>
+    <figure class="icon">
+      <img src="/assets/geniesser.svg" alt="Geniesser & Ästethen">
+      <figcaption>Geniesser & Ästethen</figcaption>
+      <a href="/loesungen" class="blocklink"></a>
+    </figure>
+    <figure class="icon">
+      <img src="/assets/gewerbe.svg" alt="Gewerbe + B2B">
+      <figcaption>Gewerbe + B2B</figcaption>
+      <a href="/loesungen-gewerbe-b2b" class="blocklink"></a>
+    </figure>
+    -->
+  </div>
+</section>

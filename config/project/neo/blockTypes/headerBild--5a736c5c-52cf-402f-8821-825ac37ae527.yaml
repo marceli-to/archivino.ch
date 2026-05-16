@@ -1,0 +1,148 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 45ef0af1-1b38-4f7a-b765-fa76c6e1d51b # Header-Bild
+fieldLayouts:
+  df0c51ab-6a82-49f5-92bd-e9e04bb08b18:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ffdc79ed-f1d9-41e3-a305-6e0a0a368e63 # Header-Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0088cf08-0a34-495f-b00e-6dfcc2493eba
+            userCondition: null
+            warning: null
+            width: 100
+        name: Bild/Video
+        uid: a0d5e728-b34e-4b98-8ab9-7ad4247bae8e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3d654830-e1a4-479a-aa0d-01d49e4a8189 # Position Punkt-Muster
+            instructions: 'Wenn kein Muster angezeigt wird, wird automatisch auch kein Kreis angezeigt.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9fb7ea98-2f52-4959-bbd6-04b279a3325a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Punkt-Muster
+        uid: 8b974d1c-475a-4d81-95c0-8589d260ec7a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            heading: Inhalt
+            type: craft\fieldlayoutelements\Heading
+            uid: 5d39c679-2154-4df1-828f-945dc6ffca42
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 8aaaef42-cec6-45d0-8b19-a6e91588f3ac # Kreis-Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a7f1bc92-f92f-43e4-ac97-43fa5b6002e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec1019f8-d638-4398-b507-9754f69c79b3 # Kreis-Schriftgrösse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 341b3a12-cbab-4ebb-acd0-21693d081549
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 63edda70-6100-406c-9052-81d10608dd53 # Kreis-Schriftstil
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14b9c8df-3750-4c2f-b45f-c1270a7cc646
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Aussehen
+            type: craft\fieldlayoutelements\Heading
+            uid: b41fb747-af5f-46c2-8b01-52afc782c70c
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 00ddb8d1-abb5-498d-9585-a7e5df817c32 # Kreis-Farbe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0406628-d14d-40b0-920f-7c7760d29c90
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b49ab7f-91de-4bbb-ae0f-a0e29f47ffef # Kreis-Grösse
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09d21dda-2f86-4578-941c-d78925586d9b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cf28ecee-94db-46b2-ab54-4deaff3b7eaf # Kreis-Position
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c0adb3c-3b82-4c5f-914f-c61b398b835c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Kreis
+        uid: f205af24-9be0-4b4f-89da-ece5f7a2f10e
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: headerBild
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Header-Bild
+topLevel: true

@@ -1,0 +1,16 @@
+description: null
+handle: intranet
+name: Intranet
+permissions:
+  - accesscp
+  - 'createfoldersinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'deletefilesandfoldersinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'deletepeerfilesinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'editimagesinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'editpeerfilesinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'editpeerimagesinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'replacefilesinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'replacepeerfilesinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'saveassetinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'viewpeerfilesinvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'
+  - 'viewvolume:660bdc7d-598b-4ca2-91f2-4262a2440f8b'

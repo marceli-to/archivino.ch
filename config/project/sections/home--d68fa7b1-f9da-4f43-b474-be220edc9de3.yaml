@@ -1,0 +1,22 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 237ead47-fe82-44cf-9690-12b87ff8c4c5 # Home
+handle: home
+maxAuthors: 1
+minAuthors: 1
+name: Home
+previewTargets:
+  -
+    label: 'Primäre eintrag Seite'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  8f7c0986-6e59-416f-a40c-3cafdb4e5953: # archivino.ch
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/index
+    uriFormat: __home__
+type: single
