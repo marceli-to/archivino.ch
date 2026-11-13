@@ -1,4 +1,4 @@
-dateModified: 1778925822
+dateModified: 1794555686
 elementSources:
   Solspace\Freeform\Elements\Submission:
     -
@@ -729,5 +729,5 @@ system:
   live: true
   name: archivino.ch
   retryDuration: null
-  schemaVersion: 5.10.0.0
+  schemaVersion: 5.12.0.2
   timeZone: Europe/Zurich

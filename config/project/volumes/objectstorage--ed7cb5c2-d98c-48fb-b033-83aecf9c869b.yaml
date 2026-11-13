@@ -61,6 +61,7 @@ fieldLayouts:
 fs: objectstorage
 handle: objectstorage
 name: Object-Storage
+propagationMethod: custom
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
