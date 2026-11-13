@@ -1,7 +1,7 @@
 {
   "require": {
     "craftcms/ckeditor": "4.11.4",
-    "craftcms/cms": "5.10.1",
+    "craftcms/cms": "5.12.1",
     "craftcms/redactor": "^4.2",
     "craftcms/security-patches": "dev-main",
     "fortrabbit/craft-object-storage": "^4.0.0",
